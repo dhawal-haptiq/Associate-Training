@@ -8,13 +8,24 @@
 
 
 }
+
+body{
+    background-color: #F9F9FF;
+    width: 1400px;
+    height: 1000px;
+    margin: 0 auto;
+}
 .nav-container{
-    width: 1300px;
+    width: 972px;
+    height: 40px;
     padding: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 12px auto;
+    margin: 30px auto ;
+    /* border: 2px solid rgba(21, 20, 57, 0.4); */
+    font-size: 12px;
+
 }
 .nav-container header{
     width: 100%;
@@ -26,49 +37,6 @@
     align-items: center;
     padding: 12px 12px;
     margin-bottom: 40px;
-}
-
-
-.acclink{
-    background-color: palevioletred;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    border-radius:20px;
-    padding-left: 5px;
-    padding-right: 5px
-}
-
-.container2{
-    background-color:none ;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-
-
-.nav-container header{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.container2 p{
-    font-family: DM Sans;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: #15143966;
-    margin-bottom: 4rem;
-
-}
-
-.signup{
-    color: white;
-    background-color: #FF6B6B;
 }
 
 .list{
@@ -83,16 +51,42 @@
 
 }
 
+.nav-container button{
+    width: 172px;
+    height: 40px;
+    margin: 12px;
+    
+}
+.login{
+    color: rgba(37, 218, 197, 1);
+    text-decoration: none;
+}
+
 .signup{
-    background: #25DAC5;
+    background-color: rgba(37, 218, 197, 1);
     width: 100;
     height: 40;
     border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 20px;;
+}
 
+
+.container2{
+    background-color:none ;
+    padding: 20px;
+    
+    text-align: center;
+    width: 714px;
+    margin: 0 auto 100px auto;
+    flex-direction: column;
+    height: 387px;
+    /* border: 2px solid rgba(21, 20, 57, 0.4); */
 }
 
 .container2 h1{
-    font-family: DM Sans;
     font-weight: 700;
     text-align: center;
     color: #1E0E62;
@@ -102,22 +96,63 @@
     letter-spacing: -1px;
     text-align: center;  
     margin-bottom: 3rem; 
-
+    /* border: 2px solid rgba(21, 20, 57, 0.4); */
+    width: 714px;
+    height: 140px;
+    margin: 0 auto 40px auto;
 }
+
+
+
+.container2 p{
+   font-size: 22px;
+   text-align: center;
+   color: rgba(21, 20, 57, 0.4);
+   width: 600px;
+   height: 96px;
+   /* border: 2px solid rgba(21, 20, 57, 0.4); */
+   margin-bottom: 3rem;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto 60px auto;
+}
+
+
+.acclink{
+   background: rgba(233, 58, 125, 1);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius:40px;
+    padding: 20px 45px;
+    width: 286px;
+    height: 60px;
+    size: 20px;
+  
+}
+
+
+
+
+
+
+
 
 .container3{
     display: flex;
-    justify-content: center;
-    align-items: space-between;
-    flex-direction: row;
-    padding: 20px;
-    
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    width: 1010px;
+    height: 247.2px;
+    /* border: 2px solid rgba(21, 20, 57, 0.4);  */
+    margin: 12px auto;
 }
 
 .container3 p{
     display: flex;
     color: rgba(21, 20, 57, 0.4);
-
+    
 }
 
 .img{
@@ -125,8 +160,9 @@
     height: 110px;
     border-radius: 10px;
     margin-right: 20px;
-    justify-content: space-between;
-    align-items: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 
@@ -137,12 +173,28 @@
     align-items: center;
     justify-content: center;
     margin-right: 20px;
-    height: 247.2px;
+    height: 219.2px;
     width: 228px;
+    /* border: 2px solid rgba(21, 20, 57, 0.4); */
 }
 
 .container2{
     height: 387px;
     width: 714px;
     margin: 0 auto;
+}
+
+.des{
+    width: 228px;
+    height: 112px;
+    /* border: 2px solid rgba(21, 20, 57, 0.4); */
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+#line{
+
+    padding: 0px 100px 0px 100px;
+    border-left: 2px solid rgba(235, 234, 237, 1);
+    border-right: 2px solid rgba(235, 234, 237, 1)
 }
