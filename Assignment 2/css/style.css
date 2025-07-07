@@ -155,13 +155,15 @@ img{
 .CardFeature{
     display: flex;
     /* align-items: start; */
-    
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    margin-bottom: 30px;
 }
 
 .feature{
     color: rgba(33, 36, 61, 1);
     font-size: 22px;
     padding:10px 20px 20px 100px;
+    
 }
 .featureimage{
     width: 246px;
@@ -170,6 +172,8 @@ img{
     align-items: center;
     justify-content: center;
 }
+
+
 
 .name{
     margin-bottom: 10px;
