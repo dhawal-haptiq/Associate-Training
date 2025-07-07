@@ -5,6 +5,7 @@
     padding: 0px;
     font-family: "Heebo";
 }
+
 .navbar ul{
     
     display: flex;
@@ -86,7 +87,7 @@ img{
     margin-bottom: 20px;
     
 }
-.smallbutton{
+.smallButton{
     display: flex;
     justify-content: space-between;
     /* border: 2px solid rgba(0, 0, 0, 1); */
@@ -206,6 +207,7 @@ img{
     transform: scale(1.05);
     transition: 0.3s;
 }
+
 
 .elements i:hover{
     transform: scale(1.05);
