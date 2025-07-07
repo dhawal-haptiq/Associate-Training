@@ -203,6 +203,13 @@ img{
     transition: 0.3s;
 }
 
+.elements i:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    color: rgba(217, 34, 49, 1);
+;
+}
+
 .elements ul{
     display: flex;
     align-items: center;
