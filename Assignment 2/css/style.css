@@ -37,6 +37,7 @@
     border-color: none;
     padding: 10px 20px;
     font-size: 20px;
+    text-decoration: none;
 }
 /* button{
     background: rgba(255, 100, 100, 1);
@@ -57,6 +58,7 @@
     padding: 110px;
     margin: auto;
     justify-content: center;
+    margin: autocss
     /* border: 2px solid rgb(5, 6, 6); */
 }
 .image{
@@ -84,7 +86,7 @@
 .container2{
     width: 1200px;
     justify-content: center;
-    border: 2px solid;
+    /* border: 2px solid; */
     margin: auto;
 }
 
