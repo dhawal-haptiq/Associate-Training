@@ -1,5 +1,5 @@
 *{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -19,6 +19,8 @@
 header {
     padding: 12px 0;
 }
+
+
 
 .cardImg img {
     height: 100%;
@@ -59,7 +61,10 @@ header {
     align-items: end;
 }
 
-.navbarLinks a:hover{
+    
+
+
+.navbarLinks li a:hover,.activeclass{
     border: 2px solid rgba(255, 255, 255, 1);
     border-radius: 40px;
 }
@@ -244,13 +249,15 @@ header {
 .footerLogo{
     display: flex;
     margin-bottom: 20px;
+    justify-content: center;
 }
 .footerLinks {
     display: flex;
     text-decoration: none;
     list-style: none;
     color: rgba(57, 62, 70, 1);  
-     
+    /* border: 2px solid; */
+    justify-content: center;
 }
 
 .footerLinks li a{
@@ -259,6 +266,8 @@ header {
     list-style: none;
     text-align: center;
     margin-bottom: 20px;
+    padding: 20px;
+    
 }
 .copyRight{
     display: flex;
@@ -278,9 +287,9 @@ header {
     /* border: 1px solid rgba(108, 0, 255, 1); */
 }
 
-.desc {
+/* .desc {
     /* border: 1px solid rgba(108, 0, 255, 1); */
-}
+
 
 .cardImg{
     width: 600px;
@@ -288,8 +297,9 @@ header {
     overflow: hidden;
     /* border: 3px solid rgba(108, 0, 255, 1); */
     box-shadow: 30px 30px 0px 0 rgba(108, 0, 255, 1);
-;
 }
+
+
 
 .desc h4{
     color:  rgba(108, 0, 255, 1);
@@ -318,6 +328,4 @@ header {
 margin-bottom: 20px;
 }
 
-.services p{
-    
-}
+
