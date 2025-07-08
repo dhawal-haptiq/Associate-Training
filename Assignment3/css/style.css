@@ -4,6 +4,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header {
+    padding: 12px 0;
+}
+
 .cardImg img {
     height: 100%;
     width: 100%;
@@ -21,7 +30,6 @@
     flex-direction: row;
     justify-content: end;
     align-items: end;
-    margin: auto;
     
 }
 
