@@ -1,13 +1,19 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    
+    font-family: 'Poppins', sans-serif;
+}
+
+.cardImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   
 }
 
 .container{
     width: 1200px;
     margin: 0 auto;
-    border: 2px solid rgba(108, 0, 255, 1);
+    /* border: 2px solid rgba(108, 0, 255, 1); */
 }
 
 .navbarLinks{
@@ -35,6 +41,7 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     padding: 10px 12px 10px 12px;
+    align-items: end;
 }
 
 .navbarLinks a:hover{
@@ -47,10 +54,10 @@
     background: url('/Assignment3/images/banner.svg');
     justify-content: center;
     align-items: center;
-    margin: -80px;
+    margin: -60px;
     background-size:cover;
     height: 100vh;
-    
+    margin-bottom: 40px;
     
 }
 
@@ -59,13 +66,14 @@
     color: white;
     font-size: 72px;
     font-weight: 700px;
+    margin-bottom: 30px;
     /* margin: -30px; */
     
 }
 .bannerContent{
     color: white;
     text-align: center;
-
+    margin-bottom: 30px;
 }
 .intro{
     display: flex;
@@ -82,6 +90,8 @@
     border-radius: 40px;
     padding: 16px 32px;
     align-items: center;
+    color: white;
+    text-decoration: none;
 
 }
 /* .navbar {
@@ -112,18 +122,79 @@
 }
 
 
-.imagWrapper{
+/* .imgWrapper{
     background: rgba(108, 0, 255, 1);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(108, 0, 255, 1);
+    border-radius: 80%;
+    overflow: hidden;
+    padding: 16px 32px; 
+    
+} */
+
+.imgWrapper {
+    width: 96px; 
+    height: 96px;
+    background: rgba(108, 0, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 16px 32px; */
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.imgWrapper img {
+    background: rgba(108, 0, 255, 1);
+    width: 40px;
+    height: 40px;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+.reverse{
+    /* flex-direction: row-reverse; */
+    flex-flow: row-reverse;
+    
+}
+
+.serviceSection{
+    margin-bottom: 30px;
+}
+.serviceHeading{
+    text-align: center;
+    /* margin-bottom: 46px; */
+}
+
+.serviceTitle{
+    font-size: 14px;
+    color: rgba(108, 0, 255, 1);
+    margin-bottom: 16px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.serviceQuestion{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.serviceName{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 .services{
     color: rgb(7, 7, 7);
-    display: flex;
+    /* display: flex; */
     /* background-color: black; */
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .servicesAll{
@@ -140,4 +211,75 @@
     justify-content: center;
     align-items: center;
     margin: 20px;
+}
+
+.featureContent{
+    display: flex;
+}
+
+.footerLogo{
+    display: flex;
+    margin-bottom: 20px;
+}
+.footerLinks {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: rgba(57, 62, 70, 1);  
+     
+}
+
+.footerLinks li a{
+    color: rgba(57, 62, 70, 1); 
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.copyRight{
+    display: flex;
+    text-align: center;
+    color: rgba(57, 62, 70, 1);
+    margin: 0 auto; 
+}
+
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border: 1px solid rgba(108, 0, 255, 1);
+}
+
+.desc {
+    border: 1px solid rgba(108, 0, 255, 1);
+}
+
+.cardImg{
+    width: 475px;
+    height: 400px;
+    overflow: hidden;
+    border: 3px solid rgba(108, 0, 255, 1);
+    box-shadow: 30px 30px 0px 0 rgba(108, 0, 255, 1);
+;
+}
+
+.desc h4{
+    color:  rgba(108, 0, 255, 1);
+
+}
+.desc h2{
+     font-size: 44px;
+}
+
+.desc ul{
+    color: rgba(57, 62, 70, 1);
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.card{
+    gap: 150px;
 }
