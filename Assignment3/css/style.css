@@ -256,6 +256,8 @@ header {
     text-align: center;
     color: rgba(57, 62, 70, 1);
     margin: 0 auto; 
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -264,18 +266,18 @@ header {
     align-items: center;
     justify-content: space-around;
 
-    border: 1px solid rgba(108, 0, 255, 1);
+    /* border: 1px solid rgba(108, 0, 255, 1); */
 }
 
 .desc {
-    border: 1px solid rgba(108, 0, 255, 1);
+    /* border: 1px solid rgba(108, 0, 255, 1); */
 }
 
 .cardImg{
-    width: 475px;
+    width: 600px;
     height: 400px;
     overflow: hidden;
-    border: 3px solid rgba(108, 0, 255, 1);
+    /* border: 3px solid rgba(108, 0, 255, 1); */
     box-shadow: 30px 30px 0px 0 rgba(108, 0, 255, 1);
 ;
 }
@@ -302,3 +304,4 @@ header {
 .desc h4,h2,p,li{
     margin-bottom: 20px;
 }
+
