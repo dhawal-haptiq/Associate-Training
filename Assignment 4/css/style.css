@@ -164,7 +164,7 @@ body{
 /* <!-- Industry Desginers Section --> */
 .industry{
     background: rgba(142, 194, 242, 1);
-    padding: 112px;
+    /* padding: 112px; */
 }
 .industryHeading{
    text-align: center;
@@ -190,6 +190,7 @@ body{
 .designer{
     background-color: #fff;
     position: relative;
+    margin-bottom: 112px;
 }
 
 .designer img{
