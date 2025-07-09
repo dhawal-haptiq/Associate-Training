@@ -318,7 +318,9 @@ margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 14px;
 }
+
 .footerImg img{
     width: 24px;
     height: 24px;
