@@ -314,6 +314,18 @@ margin-bottom: 15px;
     font-size: 16px;
 }
 
+.footerImg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footerImg img{
+    width: 24px;
+    height: 24px;
+
+
+}
+
 .socialMedia {
     display: flex;
 } 
