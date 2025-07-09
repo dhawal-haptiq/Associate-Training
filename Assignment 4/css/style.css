@@ -275,6 +275,9 @@ margin-bottom: 15px;
     
 }
 
+.colContent li{
+    margin-bottom: 20px;
+}
 .projectCardContent{
     position: relative;
     
