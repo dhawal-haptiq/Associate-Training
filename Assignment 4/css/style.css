@@ -316,10 +316,23 @@ margin-bottom: 15px;
 
 .socialMedia {
     display: flex;
+} 
+
+.socialMedia a{
+    text-decoration: none;
+    list-style: none;
+    color: rgba(35, 166, 240, 1);
+    list-style-type: none;
 }
 
-.socialMedia
+.bottomFooter h6{
+    color: rgba(115, 115, 115, 1);
+
+}
+
+/* .socialMedia */
 .bottomFooter{
     display: flex;
+    justify-content: space-between;
 }
 
