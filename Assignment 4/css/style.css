@@ -390,6 +390,59 @@ margin-bottom: 15px;
 /* Responsive  */
 /* laptop */
 
+@media screen and (max-width:992px){
+    .bannerFrame{
+        padding: 0px 20px;
+        /* border: 2px solid */
+    }
+    .companyLogo{
+    margin-right: 20px;
+    color: white;
+    }
+    
+    .viewProject a{
+    border-radius: 37px;
+    padding: 1px 16px;
+    font-size: 14px;
+    /* margin-bottom: 200px; */
+    }
+    .projectDescription{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+    flex-direction: column;
+    z-index: 1;
+} 
+.footerContents{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10px;
+    /* align-items: start; */
+}
+
+.descriptionContent{
+    display: flex;
+    padding: 90px 9px;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+.desginerCard{
+    display: flex;
+    color: black;
+    padding: 10px 50px;
+    position: relative;
+    justify-content: space-evenly;
+    /* margin-bottom: 144px; */
+}
+    
+} 
+
+
+
+
 @media screen and (min-width:992px) and (max-width: 1199px){
     
     .bannerFrame{
@@ -487,7 +540,7 @@ margin-bottom: 15px;
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
     flex-direction: column;
     z-index: 1;
@@ -495,7 +548,7 @@ margin-bottom: 15px;
     .desginerCard{
     display: flex;
     color: black;
-    padding: 0px 00px;
+    /* padding: 0px 00px; */
     gap: 80px;
     position: relative;
     justify-content: space-evenly;
@@ -505,70 +558,10 @@ margin-bottom: 15px;
 }
 
 
-
-
-/* Responsive for mobile  */
-/* @media (max-width:600px){
-   
-   .descriptionContent{
-    display: block;
-    padding: 100px 100px;
-    justify-content: center;
-    text-align: center;
-    gap: 100px;
-}
-
-   .content{
-    margin-bottom: 100px;
-   }
-
-
-   .industryHeading{
-   text-align: center;
-   margin-bottom: 80px;
-   color: white;
-   /* padding:112px 0px 0px 0px; 
-   padding-top: 112px;
-    } 
-    .industryHeading p{
-        align-items: center;
-        text-align: center;
-    }
-
-    .desginerCard{
-    display: block;
-    color: black;
-    padding: 10px 90px;
-    /* gap: 100px; 
-    position: relative;
-    justify-content: space-evenly;
-    /* margin-bottom: 144px; 
-}
-.footerContents{
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 10px;
-    /* align-items: start; 
-}
-}
-
-@media(max-width:600px) 
-{
-    .navLinks ul{
-        font-size: 30px;
-    }
-} */
-
-
 /* Responsive Mobile design  */
 
 @media screen and (min-width:375px) and (max-width : 450px){
-    .container{
-        padding: -10px 5px;
-        margin: 0 auto;
-        /* border: 2px solid; */
-        /* color: red; */
-    }
+
     .navLinks{
         display: none;
     }
@@ -586,19 +579,17 @@ margin-bottom: 15px;
     }
     .descriptionContent{
     display: block;
-    padding: 70px 70px;
+    /* padding: 70px 70px; */
     justify-content: center;
     text-align: center;
     /* gap: 100px; */
     }
-     .descriptionContent p{
-    margin-bottom: 70px;
-    }
+     
+    
     .desginerCard{
     display: block;
     color: black;
-    padding: 0px 30px;
-    gap: 100px;
+    padding: 0px 0px;
     position: relative;
     justify-content: space-evenly;
     /* margin-bottom: 144px; */
@@ -607,7 +598,7 @@ margin-bottom: 15px;
     display: none;
    }
    .industryContent{
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
    }
    .projectCards{
     display: block;
