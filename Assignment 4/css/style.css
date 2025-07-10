@@ -262,6 +262,9 @@ margin-bottom: 15px;
     /* border: 2px solid; */
 }
 
+.projectInformation{
+    padding: 112px 0px;
+}
 
 .projectCards{
     display: flex;
@@ -560,12 +563,12 @@ margin-bottom: 15px;
 /* Responsive Mobile design  */
 
 @media screen and (min-width:375px) and (max-width : 450px){
-    /* .container{
+    .container{
         padding: -10px 5px;
         margin: 0 auto;
         /* border: 2px solid; */
         /* color: red; */
-    } */
+    }
     .navLinks{
         display: none;
     }
@@ -594,7 +597,7 @@ margin-bottom: 15px;
     .desginerCard{
     display: block;
     color: black;
-    /* padding: 0px 30px; */
+    padding: 0px 30px;
     gap: 100px;
     position: relative;
     justify-content: space-evenly;
