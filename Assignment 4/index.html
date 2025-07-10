@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Viewport for responsive -->
     <title>Insurance Service</title>
     <link rel="stylesheet" href="/Assignment 4/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assignment 4/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- header -->
@@ -15,6 +23,9 @@
           <div class="companyLogo">
             <!-- <img src="" alt="" /> -->
             <a href="">Brand Name</a>
+          </div>
+          <div class="menuButton">
+            <img src="/Assignment 4/images/menuButton.svg" alt="" />
           </div>
           <div class="navbar">
             <div class="navLinks">
@@ -40,22 +51,25 @@
     </header>
     <!-- banner -->
     <section class="banner">
-      <div class="container">
-        <div class="bannerHeading">
-          <h1>
-            We Ensure A Best <br />
-            Insurance Service
-          </h1>
-          <p>
-            We know how large objects will act, but things on a small scale.
-          </p>
-        </div>
-        <div class="bannerButtons">
-          <div class="qouteButton">
-            <a href="#">Get Quote Now</a>
+      <div class="container bannerFrame">
+        <div class="">
+          <div class="bannerHeading">
+            <h1>
+              We Ensure A Best <br />
+              Insurance Service
+            </h1>
+            <p>
+              We know how large objects will act, but things on a small scale.
+            </p>
           </div>
-          <div class="learnMore">
-          <a href="#">Learn More</a>
+          <div class="bannerButtons">
+            <div class="qouteButton">
+              <a href="#">Get Quote Now</a>
+            </div>
+            <div class="learnMore">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -67,9 +81,9 @@
           <div class="content">
             <div class="descriptionImg">
               <img src="/Assignment 4/images/peaceofmind.svg" alt="" />
-            </div>     
-              <h4>Peace of Mind</h4>
-              <p>So it really behaves like neither. Now we have given up.</p>
+            </div>
+            <h4>Peace of Mind</h4>
+            <p>So it really behaves like neither. Now we have given up.</p>
           </div>
           <!-- Desc 2 -->
           <div class="content">
@@ -78,8 +92,7 @@
             </div>
             <div class="contentDesc">
               <h4>Set for Life</h4>
-              <p>They were used to create the 
-machines that launched </p>
+              <p>They were used to create the machines that launched</p>
             </div>
           </div>
           <!-- Desc 3 -->
@@ -112,7 +125,7 @@ machines that launched </p>
             <!-- card1 -->
             <div class="designer">
               <div class="profileImg">
-                <img src="/Assignment 4/images/profile1.jpg" alt="">
+                <img src="/Assignment 4/images/profile1.jpg" alt="" />
               </div>
               <div class="designerInformation">
                 <h4>Regina Miles</h4>
@@ -130,7 +143,7 @@ machines that launched </p>
             <!-- card2 -->
             <div class="designer">
               <div class="profileImg">
-                <img src="/Assignment 4/images/profile2.jpg" alt="">
+                <img src="/Assignment 4/images/profile2.jpg" alt="" />
               </div>
               <div class="designerInformation">
                 <h4>Regina Miles</h4>
@@ -154,75 +167,73 @@ machines that launched </p>
 
     <section class="industryProjectsCards">
       <div class="container">
-          <div class="industryHeading">
-            <h3>Industry</h3>
-            <p>
-              Problems trying to resolve the conflict between the two major
-              realms of Classical physics: Newtonian mechanics
-            </p>
+        <div class="industryHeading">
+          <h3>Industry</h3>
+          <p>
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div class="projectCards">
+          <!-- Project card1 -->
+          <div class="projectCardContent">
+            <div class="projectImg">
+              <img src="/Assignment 4/images/indusrtyCard1.svg" alt="" />
+            </div>
+            <div class="projectDescription">
+              <h6>Tax Management</h6>
+              <p>Life Tips From Top Ten Adventure Travelers</p>
+              <div class="viewProject">
+                <a href="">View Project</a>
+              </div>
+            </div>
           </div>
-          <div class="projectCards">
-            <!-- Project card1 -->
-            <div class="projectCardContent">
-              <div class="projectImg">
-                <img src="/Assignment 4/images/indusrtyCard1.svg" alt="" />
-              </div>
-              <div class="projectDescription">
-                <h6>Tax Management</h6>
-                <p>Life Tips From Top Ten Adventure Travelers</p>
-                <div class="viewProject">
-                <a href="">View Project</a>
-              </div>  
-              </div>
-            </div>
 
-            <!-- card2 -->
-            <div class="projectCardContent">
-              <div class="img">
-                <img src="/Assignment 4/images/industryCard2.svg" alt="" />
-              </div>
-                <div class="projectDescription">
-                <h6>Tax Management</h6>
-                <p>Life Tips From Top Ten Adventure Travelers</p>
-                <div class="viewProject">
+          <!-- card2 -->
+          <div class="projectCardContent">
+            <div class="img">
+              <img src="/Assignment 4/images/industryCard2.svg" alt="" />
+            </div>
+            <div class="projectDescription">
+              <h6>Tax Management</h6>
+              <p>Life Tips From Top Ten Adventure Travelers</p>
+              <div class="viewProject">
                 <a href="">View Project</a>
-            </div>
-            </div>
-            </div>
-
-            <!-- card3 -->
-            <div class="projectCardContent">
-              <div class="img">
-                <img src="/Assignment 4/images/industryCard3.svg" alt="" />
               </div>
-                <div class="projectDescription">
-                <h6>Tax Management</h6>
-                <p>Life Tips From Top Ten Adventure Travelers</p>
-                <div class="viewProject">
-                <a href="">View Project</a>
             </div>
-            </div>
-            </div>
+          </div>
 
-            <!-- card4 -->
-           <div class="projectCardContent">
-              <div class="img">
-                <img src="/Assignment 4/images/industryCard4.svg" alt="" />
+          <!-- card3 -->
+          <div class="projectCardContent">
+            <div class="img">
+              <img src="/Assignment 4/images/industryCard3.svg" alt="" />
+            </div>
+            <div class="projectDescription">
+              <h6>Tax Management</h6>
+              <p>Life Tips From Top Ten Adventure Travelers</p>
+              <div class="viewProject">
+                <a href="">View Project</a>
               </div>
-                <div class="projectDescription">
-                <h6>Tax Management</h6>
-                <p>Life Tips From Top Ten Adventure Travelers</p>
-                <div class="viewProject">
-                <a href="">View Project</a>
             </div>
-            </div>
-            </div>
+          </div>
 
+          <!-- card4 -->
+          <div class="projectCardContent">
+            <div class="img">
+              <img src="/Assignment 4/images/industryCard4.svg" alt="" />
+            </div>
+            <div class="projectDescription">
+              <h6>Tax Management</h6>
+              <p>Life Tips From Top Ten Adventure Travelers</p>
+              <div class="viewProject">
+                <a href="">View Project</a>
+              </div>
+            </div>
           </div>
         </div>
-   
+      </div>
     </section>
-       <!-- Footer -->
+    <!-- Footer -->
     <section class="footer">
       <div class="container">
         <div class="footerContents">
@@ -237,7 +248,7 @@ machines that launched </p>
             </ul>
           </div>
           <!-- secondrow  -->
-            <div class="colContent">
+          <div class="colContent">
             <ul>
               <li><h5>Legal</h5></li>
               <li><a href="">About Us</a></li>
@@ -247,7 +258,7 @@ machines that launched </p>
             </ul>
           </div>
           <!-- thirdrow  -->
-            <div class="colContent">
+          <div class="colContent">
             <ul>
               <li><h5>Features</h5></li>
               <li><a href="">Business Marketing</a></li>
@@ -257,7 +268,7 @@ machines that launched </p>
             </ul>
           </div>
           <!-- fourthrow  -->
-            <div class="colContent">
+          <div class="colContent">
             <ul>
               <li><h5>Resources</h5></li>
               <li><a href="">IOS & Android</a></li>
@@ -267,12 +278,30 @@ machines that launched </p>
             </ul>
           </div>
           <!-- fifthrow  -->
-            <div class="colContent">
+          <div class="colContent">
             <ul>
               <li><h5>Get In Touch</h5></li>
-              <li> <div class="footerImg"><img src="/Assignment 4/images/call.svg" alt=""><span>(480) 555-0103</span> </div></li>
-              <li> <div class="footerImg"><img src="/Assignment 4/images/gps.svg" alt=""><span>4517 Washington Ave.</span></div></li>
-              <li> <div class="footerImg"><img src="/Assignment 4/images/email.svg" alt=""><span>debra.holt@example.com</span></div></li>
+              <li>
+                <div class="footerImg">
+                  <img src="/Assignment 4/images/call.svg" alt="" /><span
+                    >(480) 555-0103</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="footerImg">
+                  <img src="/Assignment 4/images/gps.svg" alt="" /><span
+                    >4517 Washington Ave.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="footerImg">
+                  <img src="/Assignment 4/images/email.svg" alt="" /><span
+                    >debra.holt@example.com</span
+                  >
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -282,8 +311,8 @@ machines that launched </p>
     <footer>
       <div class="container">
         <div class="bottomFooter">
-          <h6>Made With Love By Figmaland All Right Reserved </h6>
-          <ul class="socialMedia">
+          <h6>Made With Love By Figmaland All Right Reserved</h6>
+          <!-- <ul class="socialMedia">
             <li> <a href="facebook.com">
               <i class="fa fa-brands fa-facebook-square"></i >
               </a>
@@ -297,9 +326,15 @@ machines that launched </p>
               <i class="fa fa-brands fa-twitter"></i>
             </a>
             </li>
-          </ul>
+          </ul> -->
+          <div class="socialIcon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa fa-brands fa-twitter"></i></a>
+          </div>
         </div>
       </div>
     </footer>
   </body>
+  <script></script>
 </html>
