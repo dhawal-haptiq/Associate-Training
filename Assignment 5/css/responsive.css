@@ -15,7 +15,7 @@
         padding: 10px 20px;
     }
 
-    
+
 }
 
 
@@ -61,6 +61,14 @@
         display: none;
     }
     .recentButton{
+        display: flex;
         text-align: center;
+        justify-content: center
+    }
+
+    .recentButton h3{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
     }
 }
