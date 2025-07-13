@@ -1,0 +1,124 @@
+@media screen and (max-width:1199px){
+      .welcomeBanner{
+        padding: 40px 60px;
+      }
+      .partners{
+        padding: 40px 60px;
+      }
+       .partnerImgs ul{
+        flex-wrap: wrap;
+        /* display: block; */
+      }
+      /* .description{
+        padding: 40px 60px;
+      } */
+      .profile{
+        padding: 40px 70px;
+        gap:60px;
+      }
+      .profileCards{
+        flex-wrap: wrap;
+      }
+      .welcomeImg img{
+        max-width: 100%;
+        height: auto;
+      }
+      .descImg1 img,.descImg2 img{
+        max-width: 100%;
+        height: auto;
+      }
+}
+
+@media screen and (max-width:991px){
+      .welcomeBanner{
+        padding: 30px 20px;
+      }
+      .partners{
+        padding: 30px 20px;
+      }
+      .profile{
+        padding: 10px 30px;
+      }
+       .partnerImgs ul{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 300px;
+        /* display: block; */
+      }
+
+      /* services  */
+      .pricing{
+        display: block;
+      }
+      .welcomeImg img{
+        max-width: 100%;
+        height: auto;
+      }
+      .descImg1 img,.descImg2 img{
+        max-width: 100%;
+        height: auto;
+      }
+      
+}
+
+@media screen and (max-width:767px){
+      .hamburger{
+        display: flex;
+      }
+      .navbar{
+        display: none;
+      }
+      .welcomeBanner{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+        /* flex-wrap: wrap; */
+      }
+
+      .welcomeContent h2,.descContent h2,.partnersContent h2{
+        font-size: 28px;
+      }
+      .welcomeImg{
+        flex-wrap: wrap;
+      }
+      .welcomeImg img{
+        max-width: 100%;
+        height: auto; 
+      }
+      
+      .descImg1 img,.descImg2 img{
+        max-width: 100%;
+        height: auto;
+      }
+      .partnerImgs ul{
+        flex-wrap: wrap;
+        display: block;
+      }
+      .descriptionBanner{
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+      .description{
+        padding: 20px 20px;
+      }
+      .profile{
+        padding: 30px 0px;
+      }
+      .services{
+        padding: 20px 20px;
+        gap:20px;
+      }
+
+      .socialMedia {
+        display: block;
+      }
+
+      .socialIcon ul{
+        justify-content: center;
+      }
+      .copyRight{
+        justify-content: center;
+      }
+    }

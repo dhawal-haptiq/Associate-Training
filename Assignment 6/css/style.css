@@ -1,0 +1,307 @@
+/* Work Sans  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Crimson text  */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans";
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+}
+
+/* Navbar  */
+.companyNavbar{
+    background-color: rgba(116, 198, 157, 1);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.companyLogo img{
+    height: 45px;
+}
+.navLinks{
+    display: flex;
+    list-style: none ;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navLinks a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    color: white;
+}
+.hamburger a img{
+    width: 35px;
+    height: 35px;
+    color: white;
+}
+
+/* Welcome Banner  */
+.welcome{
+    background-color: rgba(116, 198, 157, 1);
+}
+
+.welcomeBanner{
+    display: flex;
+    padding: 80px 0px;
+}
+
+.welcomeContent{
+    color: white;
+}
+
+.welcomeContent h5{
+    margin-bottom: 15px;
+}
+.welcomeContent p{
+    margin-bottom: 45px;
+}
+.welcomeContent a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: white;
+    align-items: center;
+    padding: 12px 45px;
+}
+h2{
+    font-family: "Crimson Text", serif;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.welcomeImg img{
+    width: 640px;
+    height: 378px;
+    /* border: 2px solid; */
+}
+/* partners  */
+
+/* .partnersContent{
+    text-align: center;
+} */
+
+.partnerImgs ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+.partners{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px   ;
+}
+
+.learnMore a, .viewTeam a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+}
+
+.partnersContent h2, .partnersContent h5, .partnersContent p{
+    margin-bottom: 20px;
+}
+
+.partnerImgs{
+    margin-bottom: 40px;
+}
+
+/* .description{
+    border: 2px solid black;
+} */
+
+.descriptionBanner{
+    display: flex;
+    /* border: 2px solid; */
+    gap: 120px;
+}
+
+.descContent{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;    
+}
+
+.descContent p{
+    margin-bottom: 35px;
+}
+.descImg1 img{
+    max-width: 600px;       
+    /* max-width: 100%;  */
+    height: 430px;
+    /* border: 2px solid; */
+}
+
+.descImg2 img{
+    width: 600px;
+    height: 500px;
+    /* border: 2px solid; */
+}
+.reverse{
+    flex-flow: row-reverse;
+}
+
+.profile{
+    padding: 100px 0px;
+}
+
+.profileCards{
+display: flex;
+justify-content: space-around;
+margin-bottom: 50px; 
+}
+
+.profileCard{
+    border: 2px solid  rgba(255, 255, 255, 1);
+    padding: 20px 40px;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+}
+
+.profileImg{
+    border-radius: 50%;
+    border: 2px solid black;
+    /* margin-bottom: 20px; */
+
+}
+
+.profileImg img{
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    
+}
+
+.profileHeadings{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.greenText{
+    color: rgba(116, 198, 157, 1);
+    letter-spacing: 5px;
+
+}
+.profile .viewTeam{
+    text-align: center;
+}
+
+.card h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: "Crimson Text";
+}
+
+.card h5{
+    color: rgba(33, 37, 41, 0.75);
+    font-weight: 400;
+}
+
+.profileHeadings h2, .profileHeadings h5, .profileHeadings p{
+    margin-bottom: 20px;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(116, 198, 157, 1);
+    padding: 50px 0px;
+}
+.socialIcon ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+.socialIcon ul li i,.copyRight{
+    color: white;
+}
+
+
+
+
+
+/* Services Page  */
+
+.services{
+    padding: 100px 20px;
+}
+.pricingCard{
+    padding: 55px 30px;
+}
+.price h2{
+    font-family: "Work Sans";
+}
+.price h5{
+    color: rgba(33, 37, 41, 0.5);
+    margin-bottom: 10px;
+}
+.servicesHeading{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.servicesHeading h2, .servicesHeading h5, .servicesHeading p{
+    margin-bottom: 20px;
+}
+
+.pricingCard{
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+}
+.pricing{
+    display: flex;
+    gap:105px;
+}
+.price{
+    text-align: center;
+}
+.pricingCard ul{
+    list-style: none;
+}
+
+.pricingDesc{
+    margin-bottom: 45px;
+}
+
+span{
+    font-size: 15px;
+    color: rgba(33, 37, 41, 0.5);
+    font-weight: 400;
+}
+.price{
+    margin-bottom: 30px;
+}
+.price sub{
+    font-size: 15px;
+    color: rgba(33, 37, 41, 0.5);
+
+}
+.ticks{
+    margin-bottom: 65px;
+}
+
+.pricingCard .learnMore{
+   text-align: center;  
+}
+
+.pricingCard .learnMore a{
+    border-radius: 5px;
+}
