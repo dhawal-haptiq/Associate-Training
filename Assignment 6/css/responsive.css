@@ -98,6 +98,7 @@
       }
       .descriptionBanner{
         flex-wrap: wrap;
+        gap:30px;
         margin-bottom: 40px;
       }
       .description{
