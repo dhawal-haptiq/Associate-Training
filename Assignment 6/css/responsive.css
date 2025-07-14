@@ -1,4 +1,7 @@
 @media screen and (max-width:1199px){
+  .companyNavbar{
+        padding: 10px 30px;
+      }
       .welcomeBanner{
         padding: 40px 60px;
       }
@@ -30,6 +33,9 @@
 }
 
 @media screen and (max-width:991px){
+      .companyNavbar{
+        padding: 10px 20px;
+      }
       .welcomeBanner{
         padding: 30px 20px;
       }
@@ -70,6 +76,9 @@
 }
 
 @media screen and (max-width:767px){
+      .companyNavbar{
+        padding: 10px 20px;
+      }
       .hamburger{
         display: flex;
       }
