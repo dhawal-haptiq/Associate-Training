@@ -12,9 +12,9 @@
         flex-wrap: wrap;
         /* display: block; */
       }
-      /* .description{
+      .description{
         padding: 40px 60px;
-      } */
+      }
       .profile{
         padding: 40px 70px;
         gap:60px;
