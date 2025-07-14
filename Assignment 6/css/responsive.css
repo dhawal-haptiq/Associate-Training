@@ -68,7 +68,7 @@
         height: auto;
       }
       .profileCards{
-        gap:20px;
+        gap:20px; 
       }
       .description{
         padding: 40px 40px;

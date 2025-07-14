@@ -133,9 +133,10 @@ h2{
     margin-bottom: 40px;
 }
 
-/* .description{
-    border: 2px solid black;
-} */
+.description{
+    /* border: 2px solid black; */
+    padding: 20px 0px;
+}
 
 .descriptionBanner{
     display: flex;
