@@ -15,7 +15,9 @@ h2{
 .nav-link:hover {
   text-decoration: underline;
 }
-
+header{
+  background: rgba(116, 198, 157, 1);
+}
 .bgGreen{
     background: rgba(116, 198, 157, 1);
 
