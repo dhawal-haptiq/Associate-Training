@@ -36,3 +36,15 @@ header{
   color: rgba(33, 37, 41, 0.5);
 
 }
+.card h5{
+  font-family: "Crimson Text";
+  font-weight: 700;
+}
+.card h6{
+  color: rgba(33, 37, 41, 0.75);
+
+}
+
+h6 {
+  text-transform: uppercase;
+}
