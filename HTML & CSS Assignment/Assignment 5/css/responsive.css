@@ -1,0 +1,74 @@
+@media screen and (max-width:1199px){
+    .profile{
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .profile{
+        padding: 20px 30px;
+    }
+    .postContent{
+        padding: 20px 20px;
+    }
+    .featureWorks{
+        padding: 10px 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width:767px){
+    .navbar{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: end;
+        padding: 15px 10px;
+    }
+    .profile{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    } 
+    .profileData,.profile{
+        align-items: center;
+        text-align: center;
+    }
+    .recentPosts{
+        flex-wrap: wrap;
+    }
+    .featureWorks{
+        flex-wrap: wrap;
+    }
+    .featureWorks h3{
+        text-align: center;
+        font-weight: 400;
+    }
+    .featureCard{
+        flex-wrap: wrap;
+        display: block;
+    }
+    .featureImg img{
+        width: 339px;
+        height: 230px;
+        border-radius: 6px;
+
+    }
+    .viewAll{
+        display: none;
+    }
+    .recentButton{
+        display: flex;
+        text-align: center;
+        justify-content: center
+    }
+
+    .recentButton h3{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

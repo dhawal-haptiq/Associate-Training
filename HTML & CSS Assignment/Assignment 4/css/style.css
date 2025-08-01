@@ -1,0 +1,564 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+body{
+    overflow-x: hidden; 
+    /* overflow-y: hidden; Hides vertical scrollbar */
+
+}
+
+/* container  */
+.container{
+    max-width: 1200px;
+    /* width: 90%; */
+    margin: 0 auto;
+    /* border: 2px solid; */
+
+    padding: 0 60px;
+}
+
+
+/* header  section */
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid; */
+    padding: 10px; 
+    align-items: center;
+}
+
+.companyLogo{
+    margin-right: 40px;
+    color: white;
+}
+
+.companyLogo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid; */
+    flex: 8;
+}
+.navLinks ul{
+    display: flex;
+    list-style: none;
+    gap:20px;
+    
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: white;
+}
+.navButtons{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.navButtons a{
+    text-decoration: none;
+    color: white;
+}
+
+.membership{
+    background-color:rgba(35, 166, 240, 1);
+    border-radius: 5px;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+.menuButton{
+    display: none;
+}
+
+/* banner section */
+.banner{
+    background-image: url('/Assignment 4/images/background.svg');
+    height: 100vh;
+    margin: -75px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    
+
+}
+
+.bannerFrame{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+     align-items: start;
+     justify-content: center;
+     height: 100%;
+    /* border: 2px solid; */
+}
+
+.bannerHeading{
+    color: white;
+    /* align-items: start; */
+    /* justify-content: start; */
+}
+
+.bannerHeading h1{
+    color: white;
+    font-size: 58px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+.bannerHeading p{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+.bannerButtons{
+    display: flex;
+}
+.bannerButtons{
+    text-decoration: none;
+    color: white;
+    gap: 10px;
+}
+
+.qouteButton{
+    background: rgba(35, 166, 240, 1);
+    border-radius: 37px;
+    padding: 15px 36px 15px 36px;
+}
+
+.qouteButton a,.learnMore a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.learnMore{
+    border-radius: 37px;
+    padding: 15px 36px; 
+    /* if the both top and bottom and right and left the use right and left one time  */
+    border: 1px solid white;
+}
+
+
+
+/* description section */
+.description{
+    /* border: 2px solid; */
+    background: rgba(37, 43, 66, 1);
+    color: white;
+
+}
+.descriptionContent{
+    display: flex;
+    padding: 96px 96px;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+.descriptionContent h4{
+    margin-bottom: 10px;
+}
+.descriptionContent p{
+    line-height: 1.5;
+}
+.descriptionImg{
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+/* <!-- Industry Desginers Section --> */
+.industry{
+    background: rgba(142, 194, 242, 1);
+    /* padding: 112px; */
+}
+.industryHeading{
+   text-align: center;
+   margin-bottom: 80px;
+   color: white;
+   /* padding:112px 0px 0px 0px; */
+   /* padding-top: 112px; */
+} 
+.industryHeading h3{
+    /* margin-bottom: 20px; */
+    font-size: 40px;
+}
+
+.desginerCard{
+    display: flex;
+    color: black;
+    /* padding: 0px 90px; */
+    gap: 100px;
+    position: relative;
+    justify-content: space-evenly;
+    /* margin-bottom: 144px; */
+}
+.designer{
+    background-color: #fff;
+    position: relative;
+    /* margin-bottom: 112px; */
+}
+
+.designer img{
+max-width: 100%;
+
+}
+.designerInformation {
+    padding: 20px 40px;
+}
+
+.designerInformation h4{
+    font-size: 24px;
+}
+
+.designerInformation  h5{
+    color: rgba(115, 115, 115, 1);
+}
+
+.designerInformation p{
+    color: rgba(115, 115, 115, 1);
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.designerInformation  h5,.designerInformation  img, .designerInformation  p{
+margin-bottom: 15px;
+}
+.profileImg img{
+    border-radius: 50%;
+    height: 72px;
+    width: 72px;
+    top: 10px;
+    left:-50px;
+    position:absolute;
+}
+
+.industryContent{
+    padding: 112px 0px;
+}
+
+
+/* <!-- Industry Projects cards  --> */
+
+.industryProjectsCards{
+    background: rgba(37, 43, 66, 1);
+    color: white;
+    /* border: 2px solid; */
+}
+
+.projectInformation{
+    padding: 112px 0px;
+}
+
+.projectCards{
+    display: flex;
+    gap: 20px;
+    /* margin-bottom: 120px; */
+}
+
+.projectCards img{
+     max-width: 100%;
+     
+}
+
+.projectDescription{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+    flex-direction: column;
+    z-index: 1;
+}
+
+.projectDescription h6, .projectDescription p{
+    margin-bottom: 20px;
+}
+.projectDescription a{
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(35, 166, 240, 1);
+    
+}
+
+.colContent li{
+    margin-bottom: 20px;
+}
+.projectCardContent{
+    position: relative;
+    
+}
+
+.viewProject a{
+    border-radius: 37px;
+    padding: 10px 36px;
+    /* margin-bottom: 200px; */
+}
+
+ /* <!-- Footer --> */
+.footer{
+    background: rgba(37, 43, 66, 1);
+    color: rgba(255, 255, 255, 1);
+
+}
+.footerContents{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 50px;
+    
+    /* align-items: start; */
+}
+
+.footerContents ul{
+    list-style: none;
+}
+.footerContents a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.footerContents h5{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footerImg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.footerImg img{
+    width: 24px;
+    height: 24px;
+
+
+}
+
+ /* Bottom Footer  */
+
+.socialMedia {
+    display: flex;
+} 
+
+.socialMedia a{
+    text-decoration: none;
+    list-style: none;
+    color: rgba(35, 166, 240, 1);
+    list-style-type: none;
+}
+
+
+.bottomFooter h6{
+    color: rgba(115, 115, 115, 1);
+
+}
+
+/* .socialMedia */
+.bottomFooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    
+}
+
+.socialIcon a{
+    /* gap:200px; */
+    padding: 0px 10px;
+    color: rgba(35, 166, 240, 1);
+
+}
+
+
+/* Responsive  */
+/* laptop */
+
+
+
+@media screen and (min-width:992px) and (max-width: 1199px){
+    
+    .bannerFrame{
+        padding: 0px 20px;
+        /* border: 2px solid */
+    }
+    .companyLogo{
+    margin-right: 20px;
+    color: white;
+    }
+    .bannerFrame{
+        align-items: center;
+    }
+    
+    .viewProject a{
+    border-radius: 37px;
+    padding: 1px 16px;
+    font-size: 14px;
+    /* margin-bottom: 200px; */
+    }
+    .projectDescription{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+    flex-direction: column;
+    z-index: 1;
+} 
+.footerContents{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10px;
+    /* align-items: start; */
+}
+
+.descriptionContent{
+    display: flex;
+    padding: 90px 9px;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+.desginerCard{
+    display: flex;
+    color: black;
+    padding: 10px 50px;
+    position: relative;
+    justify-content: space-evenly;
+    /* margin-bottom: 144px; */
+}
+
+}
+
+
+
+
+ 
+/* ..............................................  */
+/* tablet    */
+@media screen and (min-width: 768px ) and (max-width:991px){
+    .container{
+        padding: 0px 20px;
+        margin: 0 auto;
+        /* border: 2px solid; */
+        /* color: red; */
+    }
+    .membership{
+    border-radius: 5px;
+    padding: 5px 10px;
+    gap: 15px;
+    }
+    .navbar {
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid; */
+    flex: 4;
+    }
+     .navLinks ul li a{
+        font-size: 13px;
+    }
+     .viewProject a{
+    border-radius: 37px;
+    padding: 1px 16px;
+    font-size: 13px;
+    /* margin-bottom: 200px; */
+    }
+    .descriptionContent{
+    display: flex;
+    padding: 90px 7px;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    }
+
+     .projectDescription{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* padding: 30px 20px; */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+    flex-direction: column;
+    z-index: 1;
+} 
+    .desginerCard{
+    display: flex;
+    color: black;
+    /* padding: 0px 00px; */
+    gap: 80px;
+    position: relative;
+    justify-content: space-evenly;
+    /* margin-bottom: 144px; */
+}
+    
+}
+
+
+/* Responsive Mobile design  */
+
+@media screen and (min-width:375px) and (max-width : 450px){
+
+    .navLinks{
+        display: none;
+    }
+
+    .navButtons{
+        display: none;
+    }
+
+    .menuButton{
+        display: flex;
+        justify-content: end;
+    }
+    .header{
+        gap: 60%;
+    }
+    .descriptionContent{
+    display: block;
+    /* padding: 70px 70px; */
+    justify-content: center;
+    text-align: center;
+    /* gap: 100px; */
+    }
+     
+    
+    .desginerCard{
+    display: block;
+    color: black;
+    padding: 0px 0px;
+    position: relative;
+    justify-content: space-evenly;
+    /* margin-bottom: 144px; */
+}
+   .profileImg{
+    display: none;
+   }
+   .industryContent{
+    /* padding: 20px 20px; */
+   }
+   .projectCards{
+    display: block;
+   }
+
+   .footerContents{
+    display: block;
+   }
+}

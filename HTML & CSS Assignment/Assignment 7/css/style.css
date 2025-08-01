@@ -1,0 +1,50 @@
+/* Work Sans  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Crimson text  */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+*{
+  font-family: "Work Sans";
+}
+h2{
+  font-family: "Crimson Text";
+  font-weight: 900;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+.nav-link:hover {
+  text-decoration: underline;
+}
+header{
+  background: rgba(116, 198, 157, 1);
+}
+.bgGreen{
+    background: rgba(116, 198, 157, 1);
+
+}
+.color{
+  color: rgba(116, 198, 157, 1) ;
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+
+.a i{
+    color: white;
+}
+
+.paraColor{
+  color: rgba(33, 37, 41, 0.5);
+
+}
+.card h5{
+  font-family: "Crimson Text";
+  font-weight: 700;
+}
+.card h6{
+  color: rgba(33, 37, 41, 0.75);
+
+}
+
+h6 {
+  text-transform: uppercase;
+}
