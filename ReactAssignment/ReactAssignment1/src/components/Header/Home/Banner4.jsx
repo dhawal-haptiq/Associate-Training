@@ -12,7 +12,7 @@ const Banner2 = () => {
           <h3 className='text-5xl'>THE WOMEN BAGS</h3>
           <Link
             to="/womenbags"
-            className="mt-5 border border-white text-white text-sm px-6 py-3 tracking-widest hover:bg-white hover:text-black transition-colors duration-300"
+            className="mt-5 border border-black text-black text-sm px-6 py-3 tracking-widest hover:bg-black hover:text-white transition-colors duration-300"
           >
             SEE THE COLLECTION
           </Link>

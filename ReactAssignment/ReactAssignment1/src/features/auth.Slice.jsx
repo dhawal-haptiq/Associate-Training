@@ -1,4 +1,4 @@
-// features/auth.Slice.js
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 
@@ -19,7 +19,7 @@ export const loginUser = createAsyncThunk(
 
       const data = await res.json();
 
-      // Store token, not full user info
+      
       localStorage.setItem('user', JSON.stringify(data));
 
       return data;

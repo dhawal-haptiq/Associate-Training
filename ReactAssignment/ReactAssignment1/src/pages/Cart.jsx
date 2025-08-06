@@ -21,11 +21,11 @@ const Cart = () => {
   }
   
   //handle update
-  const handleUpdateApply=()=>{
-    tempItems.forEach((item)=>{
-       console.log(item);
-    })
-  }
+  // const handleUpdateApply=()=>{
+  //   tempItems.forEach((item)=>{
+  //      console.log(item);
+  //   })
+  // }
 
   //hanlde cart clear
   const handleCartClear=()=>{
@@ -69,9 +69,9 @@ const Cart = () => {
                 onChange={(e) => handleUpdateQuanity(item.id, parseInt(e.target.value))}
                 className="w-20 px-2 py-1 border border-gray-300 rounded"
               />
-              <button onClick={handleUpdateApply} className="px-4 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">
+              {/* <button onClick={handleUpdateApply} className="px-4 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">
                 Update
-              </button>
+              </button> */}
               <button onClick={()=>handleRemoveItem(item.id)} className="px-4 py-1 bg-red-600 text-white rounded hover:bg-red-700">
                 Remove
               </button>
@@ -89,7 +89,7 @@ const Cart = () => {
         </div>
        <div className="cartButtons flex gap-6 items-center">
         {/* Back to Shopping Button */}
-        <button onClick={()=>navigate("/product")} className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900">
+        <button onClick={()=>navigate("/")} className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900">
           Back to Shopping
         </button>
           <button onClick={handlePlaceOrder} className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900">

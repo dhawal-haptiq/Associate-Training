@@ -42,7 +42,7 @@ const Navbar = () => {
           ) : (
             <>
               
-              <span className="text-gray-700">Hello, {user.name || 'User'}</span>
+              <span className="text-gray-700">Hello, {user.email|| 'User'}</span>
               <button onClick={handleLogout} className="text-red-600 hover:underline">
                 Logout
               </button>

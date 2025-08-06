@@ -17,7 +17,7 @@ const Clothes = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://dummyjson.com/products/category/womens-bags');
+        const response = await fetch('https://dummyjson.com/products/category/womens-dresses');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
