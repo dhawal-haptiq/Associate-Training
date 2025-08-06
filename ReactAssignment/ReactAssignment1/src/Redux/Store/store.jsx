@@ -9,5 +9,6 @@ export const store=configureStore({
         cart:cartReducer,
         auth:authReducer,
         wishlist:wishlistReducer,
+        
     }
 })

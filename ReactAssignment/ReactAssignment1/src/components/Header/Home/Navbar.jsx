@@ -6,6 +6,7 @@ import { logout } from '../../../features/auth.Slice';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  // const [filtered, setFiltered] = useState();
   const dispatch = useDispatch();
 
   
@@ -15,6 +16,12 @@ const Navbar = () => {
     dispatch(logout());
   };
   
+  // const handletheSearchChange = (e) => {
+  //   const input=e.target.value;
+  //   setFiltered(input);
+  //   const filtered=data?.title.filter(item=>item.toLowerCase().includes(input.toLowerCase()))
+
+  // }
 
   return (
     <div className="bg-white shadow-md ">
@@ -29,6 +36,7 @@ const Navbar = () => {
             type="text"
             placeholder="Search Products"
             className="w-full border py-2 px-4"
+            // onChange={handletheSearchChange}
           />
           <FaSearch className="absolute top-3 right-3 text-blue-800" />
         </div>
@@ -42,7 +50,7 @@ const Navbar = () => {
           ) : (
             <>
               
-              <span className="text-gray-700">Hello, {user.email|| 'User'}</span>
+              <span className="text-gray-700"> {user.email}</span>
               <button onClick={handleLogout} className="text-red-600 hover:underline">
                 Logout
               </button>
@@ -81,14 +89,15 @@ const Navbar = () => {
             <FaSearch className="absolute top-3 right-3 text-red-500 md:hidden lg:hidden" />
           </div>
 
-          <Link to="/" className="block px-2 py-1 rounded">
-            HOME
-          </Link>
+         
           <Link to="/clothes" className="block px-2 py-1 rounded">
             MENS
           </Link>
-          <Link to="/wishlist" className="block px-2 py-1 rounded">
+          <Link to="/womenclothes" className="block px-2 py-1 rounded">
             WOMENS
+          </Link>
+           <Link to="/womenbags" className="block px-2 py-1 rounded">
+            BAGS
           </Link>
           <Link to="/Aboutus" className="block px-2 py-1 rounded">
             ABOUT US
@@ -99,7 +108,7 @@ const Navbar = () => {
             <FaUser className="text-xl" />
             {!user ? (
               <Link to="/login" className="text-sm">
-                Login | Register
+                Login
               </Link>
             ) : (
               <button onClick={handleLogout} className="text-sm text-red-600 hover:underline">

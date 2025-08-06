@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { loginUser } from '../features/auth.Slice';
+import { login } from '../features/auth.Slice';
 import { useNavigate, Link } from 'react-router-dom';
 
 const LoginPage = () => {
@@ -13,9 +13,9 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const resultAction = await dispatch(loginUser({ email, password }));
+    const resultAction = await dispatch(login({ email, password }));
 
-    if (loginUser.fulfilled.match(resultAction)) {
+    if (login.fulfilled.match(resultAction)) {
       navigate('/'); // Redirect on successful login
     }
   };
