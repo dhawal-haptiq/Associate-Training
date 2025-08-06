@@ -16,7 +16,7 @@ const Products = () => {
   const user = useSelector((state) => state.auth.user);
 
   
-  const validCategories = ['mens-shirts', 'women-dresses', 'womens-bags'];
+  const validCategories = ['mens-shirts', 'womens-dresses', 'womens-bags'];
 
   useEffect(() => {
     if (!categoryName || !validCategories.includes(categoryName)) {

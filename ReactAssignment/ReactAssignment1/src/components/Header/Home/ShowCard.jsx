@@ -30,7 +30,7 @@ const ShowCard = () => {
           <div className="flex flex-col items-center mt-[40vh]">
                     <p className="text-white text-sm tracking-widest mb-2">FASHION</p>
                     <Link to="" className='text-white text-5xl font-light text-center tracking-widest'>THE WOMEN COLLECTION</Link>
-                    <Link to="/category/women-dresses" className="mt-5 border border-white text-white text-sm px-6 py-3 tracking-widest hover:bg-white hover:text-black transition-colors duration-300">
+                    <Link to="/category/womens-dresses" className="mt-5 border border-white text-white text-sm px-6 py-3 tracking-widest hover:bg-white hover:text-black transition-colors duration-300">
                       SEE THE COLLECTION
                     </Link>
                   </div>

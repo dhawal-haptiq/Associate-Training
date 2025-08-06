@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Banner2 = () => {
+const Banner4 = () => {
   return (
     <div className='mt-10 text-black'>
       <div className="relative bg-[url('https://www.chanel.com/puls-img/c_limit,w_3200/q_auto:good,dpr_auto,f_auto/1742562117322-homepagecorpoonedesktopjpg_3240x5760.jpg')] bg-cover bg-center h-screen flex items-end justify-end">
@@ -23,4 +23,4 @@ const Banner2 = () => {
   );
 };
 
-export default Banner2;
+export default Banner4;

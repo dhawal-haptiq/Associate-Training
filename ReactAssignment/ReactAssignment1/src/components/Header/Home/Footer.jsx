@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { FaFacebookF, FaInstagram, FaTiktok, FaPinterestP } from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="bg-white text-black py-12 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 container">
-        
+
         {/* Shop */}
         <div>
           <h4 className="text-lg font-semibold mb-4">Shop</h4>
@@ -58,15 +58,16 @@ const Footer = () => {
         </div>
       </div>
 
-      
+
       <div className="border-t border-gray-700 mt-12 pt-6 text-sm text-center">
         <p>&copy; {new Date().getFullYear()} La Mode Line. All rights reserved.</p>
-        <div className="flex justify-center mt-4 space-x-4">
-          <Link to="#"><img src="/icons/facebook.svg" alt="Facebook" className="h-5" /></Link>
-          <Link to="#"><img src="/icons/instagram.svg" alt="Instagram" className="h-5" /></Link>
-          <Link to="#"><img src="/icons/tiktok.svg" alt="TikTok" className="h-5" /></Link>
-          <Link to="#"><img src="/icons/pinterest.svg" alt="Pinterest" className="h-5" /></Link>
+        <div className="flex justify-center mt-4 space-x-6 text-xl">
+          <Link to="#"><FaFacebookF className="hover:text-pink-400" /></Link>
+          <Link to="#"><FaInstagram className="hover:text-pink-400" /></Link>
+          <Link to="#"><FaTiktok className="hover:text-pink-400" /></Link>
+          <Link to="#"><FaPinterestP className="hover:text-pink-400" /></Link>
         </div>
+
       </div>
     </footer>
   );

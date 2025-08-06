@@ -34,15 +34,16 @@ const Cart = () => {
     // navigate("/");
   }
 
-  const handlePlaceOrder=()=>{
-    // if(cartItems.length===0){
-    //   alert("Your cart is empty");
-    //   return;
-    // }
-    alert("Order placed successfully!");
-    dispatch(clearCart());
-    navigate("/");
+  const handlePlaceOrder = () => {
+  if (cartItems.length === 0) {
+    alert("Your cart is empty. Please add items before placing an order.");
+    return;
   }
+  alert("Order placed successfully!");
+  dispatch(clearCart());
+  navigate("/");
+};
+
   return (
     <div className="min-h-screen bg-gray-100">
       
@@ -92,7 +93,9 @@ const Cart = () => {
         <button onClick={()=>navigate("/")} className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900">
           Back to Shopping
         </button>
-          <button onClick={handlePlaceOrder} className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900">
+          <button onClick={handlePlaceOrder} className={`px-6 py-3 rounded text-white ${
+    cartItems.length === 0 ? 'bg-gray-400 cursor-not-allowed' : 'bg-gray-800 hover:bg-gray-900'
+  }`}>
           Place Order
         </button>
         <button onClick={handleCartClear} className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900">
