@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {FaSearch,FaShoppingCart,FaUser, FaBars,FaTimes,FaHeart} from 'react-icons/fa';
-import Product from '../../../pages/Product';
-import Cart from '../../../pages/Cart';
-import Login from '../../../pages/Login';
-import Aboutus from './Aboutus';
+import { FaSearch, FaShoppingCart, FaUser, FaBars, FaTimes, FaHeart } from 'react-icons/fa';
+import { useSelector, useDispatch } from 'react-redux';
+import { logout } from '../../../features/auth.Slice';  // Adjust the import path
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const dispatch = useDispatch();
+
+  // Get user from redux state
+  const user = useSelector((state) => state.auth.user);
+
+  const handleLogout = () => {
+    dispatch(logout());
+  };
 
   return (
     <div className="bg-white shadow-md ">
-    
       <div className="container mx-auto px-4 md:px-16 lg:px-24 py-4 flex items-center justify-between">
-      
         <div className="text-xl font-bold">
           <Link to="/">LA MODE LINE</Link>
         </div>
@@ -28,27 +32,38 @@ const Navbar = () => {
           <FaSearch className="absolute top-3 right-3 text-blue-800" />
         </div>
 
-      
         <div className="hidden md:flex items-center space-x-4">
-          <Link to='/login' element={<Login/>}><button className="">Login</button></Link>
-           <button>
-            <Link to="/wishlist"><FaHeart className="text-xl" /></Link> 
+          {/* Conditionally render login or user menu */}
+          {!user ? (
+            <Link to="/login">
+              <button>Login</button>
+            </Link>
+          ) : (
+            <>
+              {/* You can customize this to show username or email */}
+              <span className="text-gray-700">Hello, {user.email || 'User'}</span>
+              <button onClick={handleLogout} className="text-red-600 hover:underline">
+                Logout
+              </button>
+            </>
+          )}
+
+          <button>
+            <Link to="/wishlist">
+              <FaHeart className="text-xl" />
+            </Link>
           </button>
           <button>
-            <Link to="/cart" element={<Cart/>}>
-              <FaShoppingCart className="text-xl" /></Link>
-            
+            <Link to="/cart">
+              <FaShoppingCart className="text-xl" />
+            </Link>
           </button>
         </div>
 
         {/* Hamburger Icon */}
-        <div className='my-2 mx-5'>
+        <div className="my-2 mx-5">
           <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? (
-              <FaTimes className="text-2xl" />
-            ) : (
-              <FaBars className="text-2xl" />
-            )}
+            {menuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
           </button>
         </div>
       </div>
@@ -71,24 +86,25 @@ const Navbar = () => {
           <Link to="/cart" className="block px-2 py-1 rounded">
             Cart
           </Link>
-          <Link
-            to="/wishlist"
-            className="block px-2 py-1 rounded"
-            
-          >
+          <Link to="/wishlist" className="block px-2 py-1 rounded">
             Wishlist
           </Link>
-          <Link
-            to="/Aboutus"
-            className="block px-2 py-1 rounded"
-            element={<Aboutus/>}
-          >
+          <Link to="/Aboutus" className="block px-2 py-1 rounded">
             About Us
           </Link>
-          <div className="flex hidden items-center space-x-4 mt-4 md:hidden lg:hidden">
-           
+
+          {/* Mobile Login / Logout */}
+          <div className="flex items-center space-x-4 mt-4 md:hidden lg:hidden">
             <FaUser className="text-xl" />
-            <button className="text-sm">Login | Register </button>
+            {!user ? (
+              <Link to="/login" className="text-sm">
+                Login | Register
+              </Link>
+            ) : (
+              <button onClick={handleLogout} className="text-sm text-red-600 hover:underline">
+                Logout
+              </button>
+            )}
           </div>
         </div>
       )}

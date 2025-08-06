@@ -1,12 +1,12 @@
 // features/auth.Slice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-// Replace with your real API endpoint
+
 export const loginUser = createAsyncThunk(
   'auth/loginUser',
   async ({ email, password }, { rejectWithValue }) => {
     try {
-      const res = await fetch('https://dummyjson.com/auth/login', {
+      const res = await fetch('https://api.escuelajs.co/api/v1/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -18,7 +18,9 @@ export const loginUser = createAsyncThunk(
       }
 
       const data = await res.json();
-      localStorage.setItem('user', JSON.stringify(data)); // optional: save token or user info
+
+      // Store token, not full user info
+      localStorage.setItem('user', JSON.stringify(data));
 
       return data;
     } catch (err) {
@@ -26,6 +28,7 @@ export const loginUser = createAsyncThunk(
     }
   }
 );
+
 
 const authSlice = createSlice({
   name: 'auth',
