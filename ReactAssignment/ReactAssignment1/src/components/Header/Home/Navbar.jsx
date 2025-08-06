@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch, FaShoppingCart, FaUser, FaBars, FaTimes, FaHeart } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
-import { logout } from '../../../features/auth.Slice';  // Adjust the import path
+import { logout } from '../../../features/auth.Slice';  
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const dispatch = useDispatch();
 
-  // Get user from redux state
+  
   const user = useSelector((state) => state.auth.user);
-
+  
   const handleLogout = () => {
     dispatch(logout());
   };
+  
 
   return (
     <div className="bg-white shadow-md ">
@@ -33,15 +34,15 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
-          {/* Conditionally render login or user menu */}
+          {/* login */}
           {!user ? (
             <Link to="/login">
               <button>Login</button>
             </Link>
           ) : (
             <>
-              {/* You can customize this to show username or email */}
-              <span className="text-gray-700">Hello, {user.email || 'User'}</span>
+              
+              <span className="text-gray-700">Hello, {user.name || 'User'}</span>
               <button onClick={handleLogout} className="text-red-600 hover:underline">
                 Logout
               </button>
@@ -68,7 +69,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Collapsible Menu - visible when menuOpen is true */}
+      {/*  Menu  */}
       {menuOpen && (
         <div className="bg-gray-100 px-4 py-4 space-y-4 transition-all md:hidden lg:block">
           <div className="relative">
@@ -81,16 +82,16 @@ const Navbar = () => {
           </div>
 
           <Link to="/" className="block px-2 py-1 rounded">
-            Home
+            HOME
           </Link>
-          <Link to="/cart" className="block px-2 py-1 rounded">
-            Cart
+          <Link to="/clothes" className="block px-2 py-1 rounded">
+            MENS
           </Link>
           <Link to="/wishlist" className="block px-2 py-1 rounded">
-            Wishlist
+            WOMENS
           </Link>
           <Link to="/Aboutus" className="block px-2 py-1 rounded">
-            About Us
+            ABOUT US
           </Link>
 
           {/* Mobile Login / Logout */}

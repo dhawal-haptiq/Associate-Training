@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../features/Card.Slice';
-import { addToWishlist } from '../features/Wishlist.Slice';  // import wishlist actions
-// import { useNavigate } from 'react-router-dom';
+import { addToWishlist } from '../features/Wishlist.Slice';  
+import { useNavigate } from 'react-router-dom';
 import { FaHeart } from 'react-icons/fa';
-
+import { useSelector } from 'react-redux';
 const Clothes = () => {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
 
   const dispatch = useDispatch();
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
 
-//   const user = useSelector((state) => state.auth.user); // ✅ get login status
+  const user = useSelector((state) => state.auth.user); 
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -37,11 +37,11 @@ const Clothes = () => {
   }, []);
 
   const handleAddToCart = (product) => {
-    // if (!user) {
-    //   alert('You must be logged in to add items to the cart.');
-    //   navigate('/login');
-    //   return;
-    // }
+    if (!user) {
+      alert('You must be logged in to add items to the cart.');
+      navigate('/login');
+      return;
+    }
     const normalizedProduct = {
       ...product,
       image: product.images?.[0],
@@ -53,11 +53,11 @@ const Clothes = () => {
   };
 
   const handleAddToWishlist = (product) => {
-    // if (!user) {
-    //   alert('You must be logged in to add items to the wishlist.');
-    //   navigate('/login');
-    //   return;
-    // }
+    if (!user) {
+      alert('You must be logged in to add items to the wishlist.');
+      navigate('/login');
+      return;
+    }
     const normalizedProduct = {
       ...product,
       image: product.images?.[0],
