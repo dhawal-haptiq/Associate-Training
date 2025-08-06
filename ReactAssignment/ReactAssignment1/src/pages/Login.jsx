@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { login } from '../features/auth.Slice';
+import { loginUser } from '../features/auth.Slice';
 import { useNavigate, Link } from 'react-router-dom';
 
 const LoginPage = () => {
@@ -13,9 +13,9 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const resultAction = await dispatch(login({ email, password }));
+    const resultAction = await dispatch(loginUser({ email, password }));
 
-    if (login.fulfilled.match(resultAction)) {
+    if (loginUser.fulfilled.match(resultAction)) {
       navigate('/'); // Redirect on successful login
     }
   };
@@ -34,8 +34,8 @@ const LoginPage = () => {
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
               <input
-                id="text"
-                type="text"
+                id="email"
+                type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md"

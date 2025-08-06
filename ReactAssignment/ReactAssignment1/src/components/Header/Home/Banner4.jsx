@@ -11,7 +11,7 @@ const Banner2 = () => {
           <p className=" tracking-widest mb-2">FASHION</p>
           <h3 className='text-5xl'>THE WOMEN BAGS</h3>
           <Link
-            to="/womenbags"
+            to="/category/womens-bags"
             className="mt-5 border border-black text-black text-sm px-6 py-3 tracking-widest hover:bg-black hover:text-white transition-colors duration-300"
           >
             SEE THE COLLECTION

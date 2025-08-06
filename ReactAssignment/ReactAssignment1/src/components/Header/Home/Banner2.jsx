@@ -8,11 +8,11 @@ const Banner2 = () => {
       {/* Content container aligned bottom-left */}
       <div className="flex flex-col items-start justify-end h-full px-12 pb-12">
         <p className="text-white text-sm tracking-widest mb-2">FASHION</p>
-        <Link to="/clothes" className="text-white text-7xl font-light tracking-widest ">
+        <Link to="/category/mens-shirts" className="text-white text-7xl font-light tracking-widest ">
           LATEST TRENDS
         </Link>
         <Link
-          to="/clothes"
+          to="/category/mens-shirts"
           className="mt-5 border border-white text-white text-sm px-6 py-3 tracking-widest hover:bg-white hover:text-black transition-colors duration-300"
         >
           SEE THE COLLECTION

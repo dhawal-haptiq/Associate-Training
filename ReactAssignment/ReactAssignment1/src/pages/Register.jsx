@@ -32,9 +32,9 @@ const LoginPage = () => {
                 Name
               </label>
               <input
-                id="name"
-                type="name"
-                value={name}
+                id="email"
+                type="email"
+                value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your name"
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"

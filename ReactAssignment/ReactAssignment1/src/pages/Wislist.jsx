@@ -68,7 +68,7 @@ const Wishlist = () => {
               Clear Wishlist
             </button>
             <button
-              onClick={() => navigate('/products')}
+              onClick={() => navigate('/')}
               className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900"
             >
               Continue Shopping
