@@ -1,0 +1,21 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+const Banner2 = () => {
+  return (
+    <div className='mt-10'>
+      <div className="relative bg-[url('https://www.chanel.com/puls-img/c_limit,w_3200/q_auto:good,dpr_auto,f_auto/1742562117322-homepagecorpoonedesktopjpg_3240x5760.jpg')] bg-cover bg-center h-screen flex justify-center">
+        {/* Content Container */}
+        <div className="flex flex-col items-center mt-[40vh]">
+          <p className="text-white text-sm tracking-widest mb-2">FASHION</p>
+          <Link to="/womenbags" className='text-white text-5xl font-light text-center tracking-widest'>THE WOMEN BAGS</Link>
+          <Link to="/womenbags" className="mt-5 border border-white text-white text-sm px-6 py-3 tracking-widest hover:bg-white hover:text-black transition-colors duration-300">
+            SEE THE COLLECTION
+          </Link>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Banner2

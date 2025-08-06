@@ -1,0 +1,27 @@
+import React from 'react'
+import bgImage from '../../../assets/Lamodeline.jpeg'
+import { Link } from 'react-router-dom'
+import Aboutus from './Aboutus'
+
+const Banner3 = () => {
+  return (
+    <div>
+        <div className="aboutUs text-center text-9xl mt-10 mb-10">
+            <h2>OUR STORE</h2>
+        </div>
+     <Link  to="/Aboutus">
+      <div
+        className="relative bg-cover bg-center h-screen"
+        style={{ backgroundImage: `url(${bgImage})
+        ` }}
+      >
+
+           {/* <Link  to="/Aboutus" element={<Aboutus/>}className='text-center text-cyan-100 text-9xl grid place-items-center h-screen'>ABOUT US</Link> */}
+        
+      </div>
+      </Link>
+    </div>
+  )
+}
+
+export default Banner3
