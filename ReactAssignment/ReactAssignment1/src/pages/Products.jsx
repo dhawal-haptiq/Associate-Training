@@ -158,9 +158,7 @@ const Products = () => {
         </div>
       ))
     ) : (
-      <>
       <p>No Matching Products</p>
-      </>
     )}
   </div>
 )}

@@ -5,7 +5,7 @@ import AppLayout from '../Layouts/AppLayout';
 import Aboutus from '../components/Header/Home/Aboutus';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
-import Wishlist from '../pages/Wislist';
+import Wishlist from '../pages/Wishlist';
 import ProductView from '../pages/ProductView';
 import ProductDetails from '../pages/ProductDetails';
 import Products from '../pages/Products';
