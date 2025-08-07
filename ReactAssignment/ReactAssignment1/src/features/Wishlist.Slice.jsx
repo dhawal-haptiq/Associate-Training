@@ -1,13 +1,10 @@
-  import { createSlice } from '@reduxjs/toolkit';
-
-  
-  const storedWishlist = JSON.parse(localStorage.getItem('wishlist')) || {
+import { createSlice } from '@reduxjs/toolkit';
+const storedWishlist = JSON.parse(localStorage.getItem('wishlist')) || {
     items: [],
-  };
+};
 
-  const initialState = storedWishlist;
-
-  const wishlistSlice = createSlice({
+const initialState = storedWishlist;
+const wishlistSlice = createSlice({
     name: 'wishlist',
     initialState,
     reducers: {
@@ -31,5 +28,5 @@
     },
   });
 
-  export const { addToWishlist, removeFromWishlist, clearWishlist } = wishlistSlice.actions;
-  export default wishlistSlice.reducer;
+export const { addToWishlist, removeFromWishlist, clearWishlist } = wishlistSlice.actions;
+export default wishlistSlice.reducer;

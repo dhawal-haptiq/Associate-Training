@@ -159,7 +159,7 @@ const Products = () => {
       ))
     ) : (
       <>
-      <p>No Matching Products ...</p>
+      <p>No Matching Products</p>
       </>
     )}
   </div>

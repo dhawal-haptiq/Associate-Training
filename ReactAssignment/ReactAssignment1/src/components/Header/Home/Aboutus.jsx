@@ -14,7 +14,7 @@ const Aboutus = () => {
             From street chic to luxury glam, every piece tells a story of style.<br />
             We believe fashion should be empowering, sustainable, and unapologetically you.<br />
             Crafted with precision, our fabrics feel as good as they look.<br />
-            LaModeLine isnt just a label — it a lifestyle of confidence and class.<br />
+            LaModeLine is just a label — it is a lifestyle of confidence and class.<br />
             We champion creativity, comfort, and a bold point of view.<br />
             Our mission is to redefine fashion, one silhouette at a time.<br />
             Welcome to LaModeLine — where fashion finds its voice.
