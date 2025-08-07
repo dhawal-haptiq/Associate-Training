@@ -3,12 +3,13 @@ import productReducer from "../../features/Product.Slice";
 import cartReducer from "../../features/Card.Slice";
 import authReducer from "../../features/auth.Slice";
 import wishlistReducer from "../../features/Wishlist.Slice";
+import searchReducer from "../../features/Search.Slice";
 export const store=configureStore({
     reducer: {
         products:productReducer,
         cart:cartReducer,
         auth:authReducer,
         wishlist:wishlistReducer,
-        
+        search:searchReducer
     }
 })

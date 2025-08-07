@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import { FaSearch, FaShoppingCart, FaUser, FaBars, FaTimes, FaHeart } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../../../features/auth.Slice';  
+import { search } from '../../../features/Search.Slice';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   // const [filtered, setFiltered] = useState();
   const dispatch = useDispatch();
-
+  const searchItem= useSelector((state)=>state.search.searchItem);
   
   const user = useSelector((state) => state.auth.user);
   
@@ -36,7 +37,8 @@ const Navbar = () => {
             type="text"
             placeholder="Search Products"
             className="w-full border py-2 px-4"
-            // onChange={handletheSearchChange}
+            value={searchItem}
+            onChange={(e)=>dispatch(search(e.target.value))}
           />
           <FaSearch className="absolute top-3 right-3 text-blue-800" />
         </div>

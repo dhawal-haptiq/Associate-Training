@@ -18,7 +18,7 @@ const Aboutus = () => {
             We champion creativity, comfort, and a bold point of view.<br />
             Our mission is to redefine fashion, one silhouette at a time.<br />
             Welcome to LaModeLine — where fashion finds its voice.
-          </p>
+          </p>  
         </div>
         </div>
       <div

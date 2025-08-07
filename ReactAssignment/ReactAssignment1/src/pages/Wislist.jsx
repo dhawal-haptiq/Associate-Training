@@ -29,7 +29,7 @@ const Wishlist = () => {
         ) : (
           wishlistItems.map((item) => (
             <div
-              className="bg-white shadow-md rounded-lg p-6 flex gap-6 items-center mb-6"
+              className="bg-white shadow-md rounded-lg p-6 flex gap-6 items-center mb-6 "
               key={item.id}
             >
               <img
