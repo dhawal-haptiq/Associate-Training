@@ -8,12 +8,10 @@ const Wishlist = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // Remove single item from wishlist
   const handleRemoveItem = (id) => {
     dispatch(removeFromWishlist(id));
   };
 
-  // Clear entire wishlist
   const handleClearWishlist = () => {
     dispatch(clearWishlist());
     alert('Wishlist cleared!');

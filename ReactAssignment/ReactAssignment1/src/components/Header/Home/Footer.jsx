@@ -6,18 +6,18 @@ const Footer = () => {
     <footer className="bg-white text-black py-12 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 container">
 
-        {/* Shop */}
+        
         <div>
           <h4 className="text-lg font-semibold mb-4">Shop</h4>
           <div className="flex flex-col space-y-2">
-            <Link to="/clothes" className="hover:underline">Men</Link>
-            <Link to="/womenclothes" className="hover:underline">Women</Link>
-            <Link to="/womenbags" className="hover:underline">New Arrivals</Link>
+            <Link to="/category/mens-shirts" className="hover:underline">Men</Link>
+            <Link to="/category/womens-dresses" className="hover:underline">Women</Link>
+            <Link to="/category/women-bags" className="hover:underline">New Arrivals</Link>
             <Link to="/collections/sale" className="hover:underline">Sale</Link>
           </div>
         </div>
 
-        {/* About */}
+        
         <div>
           <h4 className="text-lg font-semibold mb-4">About</h4>
           <div className="flex flex-col space-y-2">
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Customer Care */}
+    
         <div>
           <h4 className="text-lg font-semibold mb-4">Customer Care</h4>
           <div className="flex flex-col space-y-2">
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Feedback*/}
+        
         <div>
           <h4 className="text-lg font-semibold mb-4">Feedback</h4>
           <p className="text-sm mb-4">Want to write any feedback .</p>

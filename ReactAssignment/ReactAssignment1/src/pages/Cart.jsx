@@ -5,33 +5,25 @@ import { removeFromCart, updateTempQuantity,clearCart } from '../features/Card.S
 
 const Cart = () => {
   const {items:cartItems,tempItems,totalPrice}=useSelector(state=>state.cart)
-  // useSelector(state=>state.products);
   const dispatch=useDispatch();
   const navigate=useNavigate();
 
-  //handle remove item 
+
   const handleRemoveItem=(id)=>{
     dispatch(removeFromCart(id));
   }
 
-  //handle update quantity
+  
   const handleUpdateQuanity=(id,quantity)=>{
     dispatch(updateTempQuantity({id,quantity})) //entire value will be passed to payload
       
   }
-  
-  //handle update
-  // const handleUpdateApply=()=>{
-  //   tempItems.forEach((item)=>{
-  //      console.log(item);
-  //   })
-  // }
 
-  //hanlde cart clear
+  
   const handleCartClear=()=>{
     dispatch(clearCart());
     alert("Cart has been cleared");
-    // navigate("/");
+    
   }
 
   const handlePlaceOrder = () => {
@@ -70,9 +62,6 @@ const Cart = () => {
                 onChange={(e) => handleUpdateQuanity(item.id, parseInt(e.target.value))}
                 className="w-20 px-2 py-1 border border-gray-300 rounded"
               />
-              {/* <button onClick={handleUpdateApply} className="px-4 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">
-                Update
-              </button> */}
               <button onClick={()=>handleRemoveItem(item.id)} className="px-4 py-1 bg-red-600 text-white rounded hover:bg-red-700">
                 Remove
               </button>
@@ -82,14 +71,12 @@ const Cart = () => {
          ))
        } 
 
-        {/* Cart Total */}
         <div className="bg-white shadow-sm rounded-lg p-4 mb-6 flex justify-between items-center">
           <div className="text-xl font-semibold text-gray-700">
           <p>Total: {totalPrice}</p>
           </div>
         </div>
        <div className="cartButtons flex gap-6 items-center">
-        {/* Back to Shopping Button */}
         <button onClick={()=>navigate("/")} className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900">
           Back to Shopping
         </button>

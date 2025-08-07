@@ -14,10 +14,7 @@ const Banner3 = () => {
         className="relative bg-cover bg-center h-screen"
         style={{ backgroundImage: `url(${bgImage})
         ` }}
-      >
-
-           {/* <Link  to="/Aboutus" element={<Aboutus/>}className='text-center text-cyan-100 text-9xl grid place-items-center h-screen'>ABOUT US</Link> */}
-        
+      > 
       </div>
       </Link>
     </div>
