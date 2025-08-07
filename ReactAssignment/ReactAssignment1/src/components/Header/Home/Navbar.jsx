@@ -83,7 +83,7 @@ const Navbar = () => {
           </div>
 
 
-          <Link to="/catrgory/mens-shirts" className="block px-2 py-1 rounded">
+          <Link to="/category/mens-shirts" className="block px-2 py-1 rounded">
             Mens
           </Link>
           <Link to="/category/womens-dresses" className="block px-2 py-1 rounded">

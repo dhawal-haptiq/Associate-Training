@@ -4,7 +4,6 @@ import Cart from '../pages/Cart';
 import AppLayout from '../Layouts/AppLayout';
 import Aboutus from '../components/Header/Home/Aboutus';
 import Home from '../pages/Home';
-import Product from '../pages/Products';
 import Login from '../pages/Login';
 import Wishlist from '../pages/Wislist';
 import ProductView from '../pages/ProductView';
@@ -19,10 +18,6 @@ const Routers = () => {
       {
         index:true ,
        element:<Home/> 
-      },
-      {
-        path:"/product",
-        element:<Product/>
       },
       {
         path:"/cart",

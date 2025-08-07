@@ -10,7 +10,7 @@ const Products = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [filtered, setFiltered] = useState([]);
-  const searchItem=useSelector((state)=>state.search.searchItem.toUpperCase());
+  const searchItem = useSelector((state) => state.search.searchItem.toUpperCase());
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { categoryName } = useParams();
