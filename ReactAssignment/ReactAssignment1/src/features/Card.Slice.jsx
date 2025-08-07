@@ -42,7 +42,7 @@ const cartSlice = createSlice({
         tempItem.quantity = action.payload.quantity;
       }
 
-      // Sync changes back to items & total price
+      
       const item = state.items.find(item => item.id === action.payload.id);
       if (item) {
         item.quantity = action.payload.quantity;

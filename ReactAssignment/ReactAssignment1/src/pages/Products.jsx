@@ -85,7 +85,7 @@ const Products = () => {
   const handleViewMore = (product) => {
     navigate(`/product/${product.id}`, { state: { product } });
   };
-
+  // changing the heading 
   const formattedTitle = categoryName
     .replace(/-/g, ' ')
     .replace(/\b\w/g, (char) => char.toUpperCase());

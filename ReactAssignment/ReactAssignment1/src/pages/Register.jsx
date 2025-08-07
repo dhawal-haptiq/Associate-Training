@@ -12,7 +12,7 @@ const LoginPage = () => {
 
   return (
     <div className="h-screen flex">
-      {/* LeftSide  */}
+      {/* LeftSide for photo */}
       <div
         className="w-1/2 bg-cover bg-center"
         style={{
@@ -20,7 +20,7 @@ const LoginPage = () => {
             "url('/src/assets/lamodeline3.jpeg')",
         }}
       ></div>
-     {/* RightSide  */}
+     {/* RightSide  for photo */}
       
       <div className="w-1/2 flex items-center justify-center bg-gray-100">
         <div className="w-full max-w-sm p-8 bg-white rounded-lg shadow-md">

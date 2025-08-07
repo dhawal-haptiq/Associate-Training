@@ -15,7 +15,7 @@ const productSlice = createSlice({
     name: "product",
     initialState: {
         items: [],
-        status: "idle", // idle | loading | succeeded | failed
+        status: "idle", 
 },
 extraReducers: (builder) => {
     builder
@@ -24,9 +24,8 @@ extraReducers: (builder) => {
         })
         .addCase(fetchProducts.fulfilled, (state, action) => {
             state.status = 'succeeded';
-            // Add any fetched products to the array
-            state.items = action.payload; //will get access to all products
-            console.log(state.items); // Log the products to the console
+            state.items = action.payload; 
+            console.log(state.items); 
         })
         .addCase(fetchProducts.rejected, (state) => {
             state.status = 'failed';

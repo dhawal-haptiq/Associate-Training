@@ -1,6 +1,6 @@
   import { createSlice } from '@reduxjs/toolkit';
 
-  // Load wishlist from localStorage
+  
   const storedWishlist = JSON.parse(localStorage.getItem('wishlist')) || {
     items: [],
   };
@@ -21,7 +21,7 @@
 
       removeFromWishlist: (state, action) => {
         state.items = state.items.filter(item => item.id !== action.payload);
-        localStorage.setItem('wishlist', JSON.stringify(state)); // Save entire state
+        localStorage.setItem('wishlist', JSON.stringify(state)); 
       },
 
       clearWishlist: (state) => {

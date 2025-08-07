@@ -90,10 +90,10 @@ const Navbar = () => {
           </div>
 
          
-          <Link to="/clothes" className="block px-2 py-1 rounded">
+          <Link to="/catrgory/mens-shirts" className="block px-2 py-1 rounded">
             MENS
           </Link>
-          <Link to="/womenclothes" className="block px-2 py-1 rounded">
+          <Link to="/category/womens-dresses" className="block px-2 py-1 rounded">
             WOMENS
           </Link>
            <Link to="/womenbags" className="block px-2 py-1 rounded">
