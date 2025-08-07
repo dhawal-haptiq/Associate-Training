@@ -84,16 +84,16 @@ const Navbar = () => {
 
 
           <Link to="/catrgory/mens-shirts" className="block px-2 py-1 rounded">
-            MENS
+            Mens
           </Link>
           <Link to="/category/womens-dresses" className="block px-2 py-1 rounded">
-            WOMENS
+            Womens
           </Link>
           <Link to="/category/womens-bags" className="block px-2 py-1 rounded">
-            BAGS
+            Bags
           </Link>
           <Link to="/Aboutus" className="block px-2 py-1 rounded">
-            ABOUT US
+            About us
           </Link>
 
 
