@@ -23,7 +23,7 @@ const Navbar = () => {
           <Link to="/">LA MODE LINE</Link>
         </div>
 
-        {/* Search bar */}
+        
         <div className="relative hidden md:flex flex-1 mx-4">
           <input
             type="text"
@@ -63,7 +63,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Hamburger Icon */}
+      
         <div className="my-2 mx-5">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/*  Menu  */}
+    
       {menuOpen && (
         <div className="bg-gray-100 px-4 py-4 space-y-4 transition-all md:hidden lg:block">
           <div className="relative">
@@ -97,7 +97,7 @@ const Navbar = () => {
             ABOUT US
           </Link>
 
-          {/* Mobile Login / Logout */}
+          
           <div className="flex items-center space-x-4 mt-4 md:hidden lg:hidden">
             <FaUser className="text-xl" />
             {!user ? (
