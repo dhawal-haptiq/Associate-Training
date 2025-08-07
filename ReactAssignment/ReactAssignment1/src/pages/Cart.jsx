@@ -5,7 +5,7 @@ import { removeFromCart, updateTempQuantity,clearCart } from '../features/Card.S
 
 const Cart = () => {
   const {items:cartItems,tempItems,totalPrice}=useSelector(state=>state.cart)
-  useSelector(state=>state.products);
+  // useSelector(state=>state.products);
   const dispatch=useDispatch();
   const navigate=useNavigate();
 

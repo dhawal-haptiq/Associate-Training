@@ -7,7 +7,6 @@ import { search } from '../../../features/Search.Slice';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  // const [filtered, setFiltered] = useState();
   const dispatch = useDispatch();
   const searchItem= useSelector((state)=>state.search.searchItem);
   
@@ -15,14 +14,7 @@ const Navbar = () => {
   
   const handleLogout = () => {
     dispatch(logout());
-  };
-  
-  // const handletheSearchChange = (e) => {
-  //   const input=e.target.value;
-  //   setFiltered(input);
-  //   const filtered=data?.title.filter(item=>item.toLowerCase().includes(input.toLowerCase()))
-
-  // }
+  };  
 
   return (
     <div className="bg-white shadow-md ">

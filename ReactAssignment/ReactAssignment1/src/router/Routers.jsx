@@ -40,10 +40,6 @@ const Routers = () => {
         element:<Login/>
       },
       {
-        path:"/register",
-        element:<Register/>
-      },
-      {
         path:"/wishlist",
         element:<Wishlist/>
       },

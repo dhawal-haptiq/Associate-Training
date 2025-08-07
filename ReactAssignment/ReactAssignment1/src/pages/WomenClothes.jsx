@@ -5,7 +5,7 @@
   import { useNavigate } from 'react-router-dom';
   import { FaHeart } from 'react-icons/fa';
   import { useSelector } from 'react-redux';
-  import { Toaster } from 'react-hot-toast';
+  
   const WomenClothes = () => {
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
