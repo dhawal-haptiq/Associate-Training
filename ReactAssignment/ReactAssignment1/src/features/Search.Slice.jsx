@@ -1,15 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState={
-    searchItem:'',
+const initialState = { 
+    searchItem: '',
 };
 
-const searchSlice =createSlice({
+const searchSlice = createSlice({
     name:'search',
     initialState,
-    reducers:{
-        search:(state,action)=>{
-            state.searchItem=action.payload; // check in payload and it will be store and passed
+    reducers: {
+        search: (state,action) => {
+            state.searchItem = action.payload; // check in payload and it will be store and passed
         }
     },
 });

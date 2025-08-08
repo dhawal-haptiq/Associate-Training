@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-
 export const loginUser = createAsyncThunk(
   'auth/loginUser',
   async ({ email, password }, { rejectWithValue }) => {
@@ -10,17 +9,12 @@ export const loginUser = createAsyncThunk(
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
       });
-
       if (!res.ok) {
         const errorData = await res.json();
         return rejectWithValue(errorData.message || 'Invalid credentials');
       }
-
-      const data = await res.json();
-
-      
+      const data = await res.json();   
       localStorage.setItem('user', JSON.stringify(data));
-
       return data;
     } catch (err) {
       return rejectWithValue(err.message || 'Something went wrong');

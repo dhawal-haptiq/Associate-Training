@@ -11,8 +11,7 @@ const Banner3 = () => {
      <Link  to="/Aboutus">
       <div
         className="relative bg-cover bg-center h-screen"
-        style={{ backgroundImage: `url(${bgImage})
-        ` }}
+        style={{ backgroundImage: `url(${bgImage})` }}
       > 
       </div>
       </Link>

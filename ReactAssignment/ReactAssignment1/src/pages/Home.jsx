@@ -17,11 +17,11 @@ const Home = () => {
       <div className="text-6xl md:text-9xl my-10 text-center font-bold">
         <h1>LA MODE LINE</h1>
       </div>
-      <ShowCard/>  
+      <ShowCard />
       <Banner2 />
-      <Banner4/>
-      <Banner3/>
-     
+      <Banner4 />
+      <Banner3 />
+
     </div>
   )
 }

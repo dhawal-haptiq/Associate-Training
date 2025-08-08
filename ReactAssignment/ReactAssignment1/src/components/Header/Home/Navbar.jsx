@@ -58,7 +58,7 @@ const Navbar = () => {
             <Link to="/cart">
               <FaShoppingCart className="text-xl" />
             </Link>
-            {cartItems.length>0 && (
+            {cartItems.length > 0 && (
               <span className='absolute -top-3 -right-2 w-5 h-5 bg-red-400 rounded-full text-white flex items-center justify-center'>{cartItems.length}</span>
             )}
           </button>

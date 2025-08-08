@@ -2,8 +2,6 @@
 @import "tailwindcss";
 
 *{
-    /* container: 1200px; */
-    cursor: none;
     font-family: "Marcellus";
 
 }

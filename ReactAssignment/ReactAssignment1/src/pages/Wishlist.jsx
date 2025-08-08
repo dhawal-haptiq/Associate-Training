@@ -56,7 +56,7 @@ const Wishlist = () => {
                   </button>
                   <button
                     onClick={() => navigate('/cart')}
-                    className="px-4 py-1 bg-black text-white rounded hover:bg-blue-700"
+                    className="px-4 py-1 bg-black text-white rounded hover:bg-gray-900"
                   >
                     Move to Cart
                   </button>
