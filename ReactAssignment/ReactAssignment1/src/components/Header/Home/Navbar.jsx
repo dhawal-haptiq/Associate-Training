@@ -42,7 +42,6 @@ const Navbar = () => {
             </Link>
           ) : (
             <>
-
               <span className="text-gray-700"> {user.email}</span>
               <button onClick={handleLogout} className="text-red-600 hover:underline">
                 Logout
