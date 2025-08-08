@@ -2,6 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { removeFromWishlist, clearWishlist } from '../features/Wishlist.Slice';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Wishlist = () => {
   const { items: wishlistItems } = useSelector(state => state.wishlist);
@@ -10,15 +12,18 @@ const Wishlist = () => {
 
   const handleRemoveItem = (id) => {
     dispatch(removeFromWishlist(id));
+    toast.info('Item removed from wishlist');
   };
 
   const handleClearWishlist = () => {
     dispatch(clearWishlist());
-    alert('Wishlist cleared!');
+    toast.success('Wishlist cleared!');
   };
 
   return (
     <div className="min-h-screen bg-gray-100">
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar />
+      
       <div className="max-w-5xl mx-auto px-4 py-10">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">Your Wishlist</h2>
 
@@ -27,7 +32,7 @@ const Wishlist = () => {
         ) : (
           wishlistItems.map((item) => (
             <div
-              className="bg-white shadow-md rounded-lg p-6 flex gap-6 items-center mb-6 "
+              className="bg-white shadow-md rounded-lg p-6 flex gap-6 items-center mb-6"
               key={item.id}
             >
               <img

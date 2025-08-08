@@ -4,7 +4,6 @@ import Cursor from './components/Header/cursor/Cursor';
 import Loader from './components/Loader/Loader';
 import Routers from './router/Routers';
 
-
 function App() {
   const [loading, setLoading] = useState(true);
  
