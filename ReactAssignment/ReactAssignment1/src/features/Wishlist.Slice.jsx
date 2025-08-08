@@ -12,7 +12,7 @@ const wishlistSlice = createSlice({
       const exists = state.items.find(item => item.id === action.payload.id);
       if (!exists) {
         state.items.push(action.payload);
-        localStorage.setItem('wishlist', JSON.stringify(state)); // Save entire state
+        localStorage.setItem('wishlist', JSON.stringify(state)); 
       }
     },
 

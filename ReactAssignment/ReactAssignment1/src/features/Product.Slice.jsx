@@ -1,4 +1,5 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
 
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
@@ -6,16 +7,16 @@ export const fetchProducts = createAsyncThunk(
     const response = await fetch('https://fakestoreapi.com/products');
     if (!response.ok) {
       throw new Error('Failed to fetch products');
+
     }
-    const data = await response.json();
-    return data;
   }
 );
 const productSlice = createSlice({
-  name: "product",
+  name: 'products',
   initialState: {
     items: [],
-    status: "idle",
+    status: 'idle', // 'loading', 'succeeded', 'failed'
+    error: null,
   },
   reducers: {},
   extraReducers: (builder) => {
@@ -24,14 +25,17 @@ const productSlice = createSlice({
     extraReducers: (builder) => {
         builder
       .addCase(fetchProducts.pending, (state) => {
+
         state.status = 'loading';
+        state.error = null;
       })
-      .addCase(fetchProducts.fulfilled, (state, action) => {
+      .addCase(fetchProductsByCategory.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.items = action.payload;
       })
-      .addCase(fetchProducts.rejected, (state) => {
+      .addCase(fetchProductsByCategory.rejected, (state, action) => {
         state.status = 'failed';
+        state.error = action.payload || 'Something went wrong';
       });
   },
 })

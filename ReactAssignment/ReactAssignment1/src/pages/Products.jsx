@@ -6,14 +6,13 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { FaHeart } from 'react-icons/fa';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { fetchProductsByCategory } from '../features/Product.Slice';
 
 const Products = () => {
-  const [products, setProducts] = useState([]);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
   const [filtered, setFiltered] = useState([]);
-
+  const { items: products, status, error } = useSelector((state) => state.products);
   const searchItem = useSelector((state) => state.search.searchItem.toUpperCase());
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { categoryName } = useParams();
@@ -22,39 +21,13 @@ const Products = () => {
   const validCategories = ['mens-shirts', 'womens-dresses', 'womens-bags'];
 
   useEffect(() => {
-    if (!categoryName || !validCategories.includes(categoryName)) {
-      setError('Invalid category');
-      return;
-    }
-
-    const fetchProducts = async () => {
-      setLoading(true);
-      setError(null);
-
-      try {
-        const response = await fetch(`https://dummyjson.com/products/category/${categoryName}`);
-        if (!response.ok) throw new Error('Network response was not ok');
-
-        const data = await response.json();
-        if (data && Array.isArray(data.products)) {
-          setProducts(data.products);
-        } else {
-          throw new Error('Invalid product data');
-        }
-      } catch (err) {
-        console.error('Error fetching products:', err);
-        setError('Failed to load products');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
-  }, [categoryName]);
+    if (!categoryName || !validCategories.includes(categoryName)) return;
+    dispatch(fetchProductsByCategory(categoryName));
+  }, [categoryName, dispatch]);
 
   useEffect(() => {
     if (searchItem) {
-      const filteredItem = products.filter(product =>
+      const filteredItem = products.filter((product) =>
         product.title.toUpperCase().includes(searchItem)
       );
       setFiltered(filteredItem);
@@ -65,9 +38,7 @@ const Products = () => {
 
   const handleAddToCart = (product) => {
     if (!user) {
-      toast.warn('You must be logged in to add items to the cart.', {
-        position: 'top-right',
-      });
+      toast.warn('You must be logged in to add items to the cart.', { position: 'top-right' });
       navigate('/login');
       return;
     }
@@ -110,24 +81,14 @@ const Products = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
-      <ToastContainer
-        position="top-right"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={true}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar />
 
       <h1 className="text-3xl font-bold text-center mb-8">{formattedTitle} Collection</h1>
 
-      {error && <p className="text-red-500 text-center mb-6">{error}</p>}
-      {loading && <p className="text-center text-gray-500">Loading...</p>}
+      {status === 'loading' && <p className="text-center text-gray-500">Loading...</p>}
+      {status === 'failed' && <p className="text-red-500 text-center mb-6">{error}</p>}
 
-      {!loading && !error && (
+      {status === 'succeeded' && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {filtered.length > 0 ? (
             filtered.map((product) => (
