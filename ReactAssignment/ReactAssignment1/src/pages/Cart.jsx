@@ -109,22 +109,20 @@ const Cart = () => {
           </button>
           <button
             onClick={handlePlaceOrder}
-            className={`px-6 py-3 rounded text-white ${
-              cartItems.length === 0
+            className={`px-6 py-3 rounded text-white ${cartItems.length === 0
                 ? 'bg-gray-400 cursor-not-allowed'
                 : 'bg-gray-800 hover:bg-gray-900'
-            }`}
+              }`}
             disabled={cartItems.length === 0}
           >
             Place Order
           </button>
           <button
             onClick={handleCartClear}
-            className={`px-6 py-3 rounded text-white ${
-              cartItems.length === 0
+            className={`px-6 py-3 rounded text-white ${cartItems.length === 0
                 ? 'bg-gray-400 cursor-not-allowed'
                 : 'bg-red-600 hover:bg-red-700'
-            }`}
+              }`}
             disabled={cartItems.length === 0}
           >
             Clear Cart

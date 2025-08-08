@@ -13,7 +13,7 @@ export const loginUser = createAsyncThunk(
         const errorData = await res.json();
         return rejectWithValue(errorData.message || 'Invalid credentials');
       }
-      const data = await res.json();   
+      const data = await res.json();
       localStorage.setItem('user', JSON.stringify(data));
       return data;
     } catch (err) {

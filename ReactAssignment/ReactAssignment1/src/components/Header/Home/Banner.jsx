@@ -8,7 +8,6 @@ const Banner = () => {
           <p className="tracking-widest mb-2 text-3xl">LUXURY</p>
           <h3 className="text-6xl">ELEGANT FASHION STORE</h3>
         </div>
-
       </div>
     </div>
   );

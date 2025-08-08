@@ -9,7 +9,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const dispatch = useDispatch();
   const searchItem = useSelector((state) => state.search.searchItem);
-  const cartItems=useSelector((state)=>state.cart.items);
+  const cartItems = useSelector((state) => state.cart.items);
   const user = useSelector((state) => state.auth.user);
 
   const handleLogout = () => {
@@ -22,8 +22,6 @@ const Navbar = () => {
         <div className="text-xl font-bold">
           <Link to="/">LA MODE LINE</Link>
         </div>
-
-
         <div className="relative hidden md:flex flex-1 mx-4">
           <input
             type="text"
@@ -63,16 +61,12 @@ const Navbar = () => {
             )}
           </button>
         </div>
-
-
         <div className="my-2 mx-5">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
           </button>
         </div>
       </div>
-
-
       {menuOpen && (
         <div className="bg-gray-100 px-4 py-4 space-y-4 transition-all md:hidden lg:block">
           <div className="relative">
@@ -83,8 +77,6 @@ const Navbar = () => {
             />
             <FaSearch className="absolute top-3 right-3 text-red-500 md:hidden lg:hidden" />
           </div>
-
-
           <Link to="/category/mens-shirts" className="block px-2 py-1 rounded">
             Mens
           </Link>
@@ -97,8 +89,6 @@ const Navbar = () => {
           <Link to="/Aboutus" className="block px-2 py-1 rounded">
             About us
           </Link>
-
-
           <div className="flex items-center space-x-4 mt-4 md:hidden lg:hidden">
             <FaUser className="text-xl" />
             {!user ? (

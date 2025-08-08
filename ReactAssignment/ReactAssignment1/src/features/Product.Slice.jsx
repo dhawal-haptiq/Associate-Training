@@ -1,4 +1,4 @@
-import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
@@ -9,27 +9,27 @@ export const fetchProducts = createAsyncThunk(
     }
     const data = await response.json();
     return data;
-  } 
+  }
 );
 const productSlice = createSlice({
-    name: "product",
-    initialState: {
-        items: [],
-        status: "idle", 
-},
-extraReducers: (builder) => {
+  name: "product",
+  initialState: {
+    items: [],
+    status: "idle",
+  },
+  reducers: {},
+  extraReducers: (builder) => {
     builder
-        .addCase(fetchProducts.pending, (state) => {
-            state.status = 'loading';
-        })
-        .addCase(fetchProducts.fulfilled, (state, action) => {
-            state.status = 'succeeded';
-            state.items = action.payload; 
-            console.log(state.items); 
-        })
-        .addCase(fetchProducts.rejected, (state) => {
-            state.status = 'failed';
-        });
+      .addCase(fetchProducts.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(fetchProducts.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.items = action.payload;
+      })
+      .addCase(fetchProducts.rejected, (state) => {
+        state.status = 'failed';
+      });
   },
 })
 

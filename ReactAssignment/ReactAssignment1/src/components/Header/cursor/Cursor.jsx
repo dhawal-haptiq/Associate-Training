@@ -32,7 +32,6 @@ const Cursor = () => {
           transform: 'translate(-50%, -50%)',
         }}
       >
-        {/* <h3 className='text-white text-center p-5'>Click</h3> */}
       </div>
     </div>
   );

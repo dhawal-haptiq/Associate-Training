@@ -4,7 +4,7 @@ import Cursor from './components/Header/cursor/Cursor';
 import Loader from './components/Loader/Loader';
 import Routers from './router/Routers';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; 
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [loading, setLoading] = useState(true);

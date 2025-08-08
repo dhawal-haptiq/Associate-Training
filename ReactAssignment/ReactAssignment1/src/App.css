@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 @import "tailwindcss";
 
-*{
-    font-family: "Marcellus";
-
+* {
+  font-family: "Marcellus";
 }
-

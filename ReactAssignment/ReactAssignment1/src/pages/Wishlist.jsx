@@ -70,11 +70,10 @@ const Wishlist = () => {
         <div className="flex gap-6 justify-center mt-6">
           <button
             onClick={handleClearWishlist}
-            className={`px-6 py-3 rounded text-white ${
-              wishlistItems.length === 0
+            className={`px-6 py-3 rounded text-white ${wishlistItems.length === 0
                 ? 'bg-gray-400 cursor-not-allowed'
                 : 'bg-gray-800 hover:bg-gray-900'
-            }`}
+              }`}
             disabled={wishlistItems.length === 0}
           >
             Clear Wishlist
