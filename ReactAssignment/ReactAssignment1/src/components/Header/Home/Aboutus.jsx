@@ -5,9 +5,10 @@ const Aboutus = () => {
   return (
     <div>
       <div className="section">
-        <div className=" max-w-3xl mx-auto p-8 rounded-lg text-black  text-left">
-          <h1 className='text-center text-5xl' >ABOUT US</h1>
-          <p className="text-lg space-y-4 text-center">
+        <div className="max-w-3xl mx-auto p-8 rounded-lg text-black text-left">
+          <h1 className="text-center text-3xl sm:text-4xl md:text-5xl">ABOUT US</h1>
+
+          <p className="text-sm sm:text-base md:text-lg text-center space-y-4 mt-4">
             LaModeLine is where timeless elegance meets contemporary fashion.<br />
             We curate premium clothing that celebrates individuality and bold expression.<br />
             Our collections are inspired by global trends and refined with artistic detail.<br />
@@ -19,9 +20,11 @@ const Aboutus = () => {
             Our mission is to redefine fashion, one silhouette at a time.<br />
             Welcome to LaModeLine — where fashion finds its voice.
           </p>
-          <h1>Photo</h1>
+
+          <h1 className="mt-6 text-center text-xl sm:text-2xl">Photo</h1>
         </div>
       </div>
+
       <div
         className="relative bg-cover bg-center h-screen flex items-center"
         style={{ backgroundImage: `url(${bgImage})` }}
