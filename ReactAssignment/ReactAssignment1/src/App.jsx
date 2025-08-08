@@ -1,12 +1,14 @@
-import './App.css';
 import React, { useState, useEffect } from 'react';
+import './App.css';
 import Cursor from './components/Header/cursor/Cursor';
 import Loader from './components/Loader/Loader';
 import Routers from './router/Routers';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 function App() {
   const [loading, setLoading] = useState(true);
- 
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
@@ -21,9 +23,22 @@ function App() {
         <Loader />
       ) : (
         <>
-        <Cursor />
-        <Routers/>
-          
+          <Cursor />
+          <Routers />
+
+          {/* ✅ ToastContainer must be added here */}
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
         </>
       )}
     </div>

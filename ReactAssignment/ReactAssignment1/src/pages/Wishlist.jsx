@@ -16,6 +16,10 @@ const Wishlist = () => {
   };
 
   const handleClearWishlist = () => {
+    if (wishlistItems.length === 0) {
+      toast.info("Wishlist is already empty.");
+      return;
+    }
     dispatch(clearWishlist());
     toast.success('Wishlist cleared!');
   };
@@ -23,7 +27,7 @@ const Wishlist = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <ToastContainer position="top-right" autoClose={2000} hideProgressBar />
-      
+
       <div className="max-w-5xl mx-auto px-4 py-10">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">Your Wishlist</h2>
 
@@ -62,22 +66,26 @@ const Wishlist = () => {
           ))
         )}
 
-        {wishlistItems.length > 0 && (
-          <div className="flex gap-6 justify-center mt-6">
-            <button
-              onClick={handleClearWishlist}
-              className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900"
-            >
-              Clear Wishlist
-            </button>
-            <button
-              onClick={() => navigate('/')}
-              className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900"
-            >
-              Continue Shopping
-            </button>
-          </div>
-        )}
+        {/* Always show buttons */}
+        <div className="flex gap-6 justify-center mt-6">
+          <button
+            onClick={handleClearWishlist}
+            className={`px-6 py-3 rounded text-white ${
+              wishlistItems.length === 0
+                ? 'bg-gray-400 cursor-not-allowed'
+                : 'bg-gray-800 hover:bg-gray-900'
+            }`}
+            disabled={wishlistItems.length === 0}
+          >
+            Clear Wishlist
+          </button>
+          <button
+            onClick={() => navigate('/')}
+            className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900"
+          >
+            Continue Shopping
+          </button>
+        </div>
       </div>
     </div>
   );
