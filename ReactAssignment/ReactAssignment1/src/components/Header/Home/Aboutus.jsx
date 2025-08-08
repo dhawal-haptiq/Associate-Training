@@ -19,6 +19,7 @@ const Aboutus = () => {
             Our mission is to redefine fashion, one silhouette at a time.<br />
             Welcome to LaModeLine — where fashion finds its voice.
           </p>
+          <h1>Photo</h1>
         </div>
       </div>
       <div
