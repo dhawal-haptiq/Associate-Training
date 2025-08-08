@@ -9,7 +9,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const dispatch = useDispatch();
   const searchItem = useSelector((state) => state.search.searchItem);
-
+  const cartItems=useSelector((state)=>state.cart.items);
   const user = useSelector((state) => state.auth.user);
 
   const handleLogout = () => {
@@ -55,10 +55,13 @@ const Navbar = () => {
               <FaHeart className="text-xl" />
             </Link>
           </button>
-          <button>
+          <button className='relative'>
             <Link to="/cart">
               <FaShoppingCart className="text-xl" />
             </Link>
+            {cartItems.length>0 && (
+              <span className='absolute -top-3 -right-2 w-5 h-5 bg-red-400 rounded-full text-white flex items-center justify-center'>{cartItems.length}</span>
+            )}
           </button>
         </div>
 

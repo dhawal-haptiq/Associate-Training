@@ -25,8 +25,6 @@ function App() {
         <>
           <Cursor />
           <Routers />
-
-          {/* ✅ ToastContainer must be added here */}
           <ToastContainer
             position="top-right"
             autoClose={3000}

@@ -120,7 +120,6 @@ const Products = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="colored"
       />
 
       <h1 className="text-3xl font-bold text-center mb-8">{formattedTitle} Collection</h1>

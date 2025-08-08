@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { addToCart } from '../features/Card.Slice';
 import { addToWishlist } from '../features/Wishlist.Slice';
-import { toast } from 'react-toastify'; 
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetails = () => {
   const location = useLocation();
@@ -49,7 +50,9 @@ const ProductDetails = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-10">  
+    
       <img src={product.images[0]} alt={product.title} className="w-full rounded-lg" />
+      
       <div className="flex flex-col justify-center items-center text-center">
         <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
         <p className="text-gray-700 mb-4">{product.description}</p>
@@ -70,6 +73,17 @@ const ProductDetails = () => {
             Add to Wishlist
           </button>
         </div>
+         <ToastContainer
+                position="top-right"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={true}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
       </div>
     </div>
   );
