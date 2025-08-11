@@ -1,0 +1,182 @@
+[
+  {
+    "id": "J008",
+    "name": "Manchester United Home Jersey 25/26",
+    "description": "Brand new home jersey for the 2025/26 season. A fresh design with enhanced fabric technology for optimal performance and comfort.",
+    "price": 99.99,
+    "team": "Manchester United",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=ManUtd+Home+Jersey+25/26"
+  },
+  {
+    "id": "J009",
+    "name": "Real Madrid Home Jersey 25/26",
+    "description": "The latest home jersey for Real Madrid's 2025/26 campaign. Features a modern, elegant look with all-new details and a premium finish.",
+    "price": 105.00,
+    "team": "Real Madrid",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Real+Madrid+Home+Jersey+25/26"
+  },
+  {
+    "id": "J010",
+    "name": "Arsenal Away Jersey 25/26",
+    "description": "The official away jersey for Arsenal's 2025/26 season. A striking and bold design that stands out on the pitch and in the stands.",
+    "price": 95.00,
+    "team": "Arsenal",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Arsenal+Away+Jersey+25/26"
+  },
+  {
+    "id": "J011",
+    "name": "Barcelona Home Jersey 25/26",
+    "description": "FC Barcelona's new home jersey for 2025/26. Combines the classic Blaugrana colors with an innovative pattern and lightweight fabric.",
+    "price": 109.99,
+    "team": "Barcelona",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Barcelona+Home+Jersey+25/26"
+  },
+  {
+    "id": "J012",
+    "name": "Liverpool Away Jersey 25/26",
+    "description": "The new away jersey for Liverpool, featuring a unique color palette and cutting-edge design. Made for comfort and style.",
+    "price": 99.99,
+    "team": "Liverpool",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Liverpool+Away+Jersey+25/26"
+  },
+  {
+    "id": "J013",
+    "name": "Bayern Munich Away Jersey 25/26",
+    "description": "Bayern Munich's new away kit for the 2025/26 season. A stylish jersey with a dynamic graphic print, perfect for showing team pride.",
+    "price": 102.50,
+    "team": "Bayern Munich",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Bayern+Munich+Away+Jersey+25/26"
+  },
+  {
+    "id": "J014",
+    "name": "Paris Saint-Germain Away Jersey 25/26",
+    "description": "The latest away kit for PSG, featuring an elegant design that captures the spirit of Paris. Designed for peak performance and fan apparel.",
+    "price": 100.00,
+    "team": "PSG",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=PSG+Away+Jersey+25/26"
+  },
+  {
+    "id": "J015",
+    "name": "Manchester City Third Jersey 25/26",
+    "description": "Manchester City's third kit for the 2025/26 season. Features a vibrant, eye-catching design with a focus on modern aesthetics.",
+    "price": 99.00,
+    "team": "Manchester City",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=ManCity+Third+Jersey+25/26"
+  },
+  {
+    "id": "J016",
+    "name": "Chelsea Home Jersey 25/26",
+    "description": "The classic blue home jersey for Chelsea, updated for the 2025/26 season. A timeless design with new performance-enhancing features.",
+    "price": 98.00,
+    "team": "Chelsea",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Chelsea+Home+Jersey+25/26"
+  },
+  {
+    "id": "J017",
+    "name": "Tottenham Hotspur Home Jersey 25/26",
+    "description": "Tottenham's home kit for the 2025/26 season. Features the iconic white and a minimalist design, celebrating the club's tradition.",
+    "price": 94.00,
+    "team": "Tottenham Hotspur",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Spurs+Home+Jersey+25/26"
+  },
+  {
+    "id": "J018",
+    "name": "Juventus Home Jersey 25/26",
+    "description": "The new black and white striped home jersey for Juventus. A modern interpretation of a classic design, made for the champions of Italy.",
+    "price": 101.50,
+    "team": "Juventus",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Juventus+Home+Jersey+25/26"
+  },
+  {
+    "id": "J019",
+    "name": "Inter Milan Away Jersey 25/26",
+    "description": "Inter Milan's away kit for 2025/26. A sleek, white jersey with striking details that reflect the city's modern architecture.",
+    "price": 96.50,
+    "team": "Inter Milan",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Inter+Milan+Away+Jersey+25/26"
+  },
+  {
+    "id": "J020",
+    "name": "AC Milan Home Jersey 25/26",
+    "description": "The Rossoneri's new home jersey for the 2025/26 season. Bold red and black stripes, a symbol of the club's power and passion.",
+    "price": 97.00,
+    "team": "AC Milan",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=AC+Milan+Home+Jersey+25/26"
+  },
+  {
+    "id": "J021",
+    "name": "Borussia Dortmund Home Jersey 25/26",
+    "description": "The classic yellow and black home kit for BVB, with a new twist for 2025/26. Designed to bring out the passion of the fans.",
+    "price": 93.00,
+    "team": "Borussia Dortmund",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Borussia+Dortmund+Home+Jersey+25/26"
+  },
+  {
+    "id": "J022",
+    "name": "Atlético Madrid Home Jersey 25/26",
+    "description": "Atlético Madrid's new home jersey for the 2025/26 season. Features the iconic red and white stripes with a unique, modern design.",
+    "price": 95.50,
+    "team": "Atlético Madrid",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Atletico+Madrid+Home+Jersey+25/26"
+  },
+  {
+    "id": "J023",
+    "name": "AS Roma Home Jersey 25/26",
+    "description": "AS Roma's new home kit, featuring the club's traditional colors and symbols. Made with lightweight, high-performance materials.",
+    "price": 94.50,
+    "team": "AS Roma",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=AS+Roma+Home+Jersey+25/26"
+  },
+  {
+    "id": "J024",
+    "name": "Napoli Away Jersey 25/26",
+    "description": "Napoli's away jersey for 2025/26. A clean and elegant design with unique details that pay tribute to the city's heritage.",
+    "price": 92.00,
+    "team": "Napoli",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Napoli+Away+Jersey+25/26"
+  },
+  {
+    "id": "J025",
+    "name": "Bayer Leverkusen Home Jersey 25/26",
+    "description": "The home kit for Bayer Leverkusen, celebrating their recent success. Features a bold design and advanced fabric technology.",
+    "price": 93.50,
+    "team": "Bayer Leverkusen",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Bayer+Leverkusen+Home+Jersey+25/26"
+  },
+  {
+    "id": "J026",
+    "name": "FC Porto Home Jersey 25/26",
+    "description": "FC Porto's new home jersey, featuring the classic blue and white stripes with a modern twist. Designed for both fans and players.",
+    "price": 88.00,
+    "team": "FC Porto",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=FC+Porto+Home+Jersey+25/26"
+  },
+  {
+    "id": "J027",
+    "name": "Ajax Home Jersey 25/26",
+    "description": "The iconic red and white home jersey for Ajax, with a fresh design for the 2025/26 season. A symbol of the club's attacking philosophy.",
+    "price": 91.00,
+    "team": "Ajax",
+    "season": "25/26",
+    "image_url": "https://placehold.co/1200x1200/E0E0E0/333333?text=Ajax+Home+Jersey+25/26"
+  }
+]
